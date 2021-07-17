@@ -1,0 +1,42 @@
+div {
+	width: 100%;
+	display: block;
+	page-break-after: always;
+	margin-top: 1em;
+}
+
+div:first-of-type {
+	margin-top: 0px;
+}
+
+table {
+	margin-top: 1em;
+	width: 100%;
+}
+
+h2:first-child {
+	margin: 0px;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: .2em 1em;
+	text-align: center;
+}
+
+
+/* Colors
+th {
+	background-color: #EEEEEE;
+}
+.red {
+	color: red;
+}
+.blue {
+	color: blue;
+}
+h1 {
+	color: green;
+}
+*/
