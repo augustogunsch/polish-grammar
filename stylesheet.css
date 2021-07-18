@@ -14,17 +14,32 @@ table {
 	width: 100%;
 }
 
-h2:first-child {
-	margin: 0px;
+h2:first-of-type {
+	margin-top: 0px;
 }
 
 table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
-	padding: .2em 1em;
+	padding: .2em 0em;
 	text-align: center;
 }
 
+.empty, .empty th, .empty td {
+	border: none;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+.u {
+	text-decoration: underline;
+}
+
+p {
+	text-align: justify;
+}
 
 /* Colors
 th {

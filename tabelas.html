@@ -5,165 +5,205 @@
 		<link rel="stylesheet" href="stylesheet.css">
 	</head>
 	<body>
-		<h1>Legenda</h1>
+
+		<h1>Referência</h1>
 		<div>
-		<h2>Gêneros</h2>
+		<h2>Classificação das Consoantes</h2>
 		<ul>
-			<li>M - masculino</li>
-			<li>F - feminino</li>
-			<li>N - neutro</li>
-			<li>P- pessoal (referente a humanos)</li>
-			<li>NP- Não-pessoal (referente a objetos ou animais)</li>
-			<li>V - vivo</li>
-			<li>NV - não-vivo</li>
+			<li><strong><u>Fortes</u></strong></li>
+			<li><u>Fortificadas</u></li>
+			<li>Fracas</li>
 		</ul>
-		<h2>Grupos de Letras</h2>
+		<table class="empty">
+			<tr class="strong u">
+				<td>m</td><td>b</td><td>p</td><td>w</td><td>f</td><td>n</td><td>d</td><td>t</td><td>z</td>
+				<td>s</td><td>ł</td><td>r</td><td>g/gi</td><td>k/ki</td><td>h/hi</td><td>ch/chi</td>
+			</tr>
+			<tr>
+				<td>mi</td><td>bi</td><td>pi</td><td>wi</td><td>fi</td><td>ni</td><td>dź</td><td>ć</td><td>ź</td><td>ś</td><td>l</td>
+				<td class="u">rz</td><td class="u">dz</td><td class="u">c</td><td class="u">ż</td><td class="u">sz/dż</td>
+			</tr>
+			<tr>
+				<td>cz</td><td>j</td>
+			</tr>
+		</table>
+		<h2>Regras Especiais</h2>
 		<ul>
-			<li>C - Consoante</li>
-			<li>CFOR - Consoante forte</li>
-			<li>CFORTI - Consoante fortificada</li>
-			<li>CFRA - Consoante fraca</li>
-		</ul>
-		<h2>Símbolos</h2>
-		<ul>
-			<li>&exist; - Outros; não mencionados; alguns</li>
+			<li><strong>k</strong> e <strong>g</strong> nunca vão antes de <strong>y</strong>, nesses casos o <strong>y</strong> vira <strong>i</strong>. </li>
 		</ul>
 		</div>
 
-		<h1>Declinações</h1>
 		<div>
 		<h2>Nominativo</h2>
 		<table>
-			<tr>
-				<th class="blue", colspan="4">Substantivos</th>
-			</tr>
-			<tr>
-				<th rowspan="4" >Singular</th>
-				<th>Gênero</th>
-				<th colspan="2">Final</th>
-			</tr>
-			<tr>
-				<td>M</td>
-				<td colspan="2">-C</td>
-			</tr>
-			<tr>
-				<td>F</td>
-				<td colspan="2">-a, -i</td>
-			</tr>
-			<tr>
-				<td>N</td>
-				<td colspan="2">-o, -e, -ę, -ię, -um</td>
-			</tr>
-			<tr>
-				<th rowspan="8">Plural</th>
-				<th>Gênero</th>
-				<th>Quando</th>
-				<th>Final</th>
-			</tr>
-			<tr>
-				<td rowspan="2">M NP,<br>F</td>
-				<td>CFOR</td>
-				<td>-y</td>
-			</tr>
-			<tr>
-				<td>CFRA, CFORTI</td>
-				<td>-e</td>
-			</tr>
-			<tr>
-				<td>N</td>
-				<td>-</td>
-				<td>-a</td>
-			</tr>
-			<tr>
-				<td rowspan="4">M P</td>
-				<td>CFOR &minus; {-k, -g, -r}</td>
-				<td>-'i</td>
-			</tr>
-			<tr>
-				<td>-k, -g, -r, -c</td>
-				<td>-'y</td>
-			</tr>
-			<tr>
-				<td>CFRA, CFORTI</td>
-				<td>-e</td>
-			</tr>
-			<tr>
-				<td>&exist;</td>
-				<td>-owie</td>
-			</tr>
+			<tr> <th class="blue", colspan="4">Substantivos</th> </tr>
+			<tr> <th rowspan="4" >Singular</th> <th>Gênero</th> <th colspan="2">Final</th> </tr>
+			<tr> <td>Masculino</td> <td colspan="2">Consoante</td> </tr>
+			<tr> <td>Feminino</td> <td colspan="2">-a, -i</td> </tr>
+			<tr> <td>Neutro</td> <td colspan="2">-o, -e, -ę, -ię, -um</td> </tr>
+			<tr> <th rowspan="8">Plural</th> <th>Gênero</th> <th>Quando</th> <th>Final</th> </tr>
+			<tr> <td rowspan="2">Masculino não-homem,<br>feminino</td> <td>Consoante fortificada</td> <td>-y</td> </tr>
+			<tr> <td>Consoante fraca, fortificada</td> <td>-e</td> </tr>
+			<tr> <td>Neutro</td> <td>-</td> <td>-a</td> </tr>
+			<tr> <td rowspan="4">Masculino homem</td> <td>Consoante fortificada menos -k, -g, -r</td> <td>-'i</td> </tr>
+			<tr> <td>-k, -g, -r, -c</td> <td>-'y</td> </tr>
+			<tr> <td>Consoante fraca, fortificada</td> <td>-e</td>
+			</tr> <tr> <td>Outros</td> <td>-owie</td> </tr>
 		</table>
 
 		<table>
-			<tr>
-				<th class="red", colspan="4">Adjetivos</th>
-			</tr>
-			<tr>
-				<th rowspan="4" >Singular</th>
-				<th>Gênero</th>
-				<th colspan="2">Final</th>
-			</tr>
-			<tr>
-				<td>M</td>
-				<td colspan="2">-y, -i</td>
-			</tr>
-			<tr>
-				<td>F</td>
-				<td colspan="2">-a</td>
-			</tr>
-			<tr>
-				<td>N</td>
-				<td colspan="2">-e, -ie</td>
-			</tr>
-			<tr>
-				<th rowspan="3">Plural</th>
-				<th>Gênero</th>
-				<th>Quando</th>
-				<th>Final</th>
-			</tr>
-			<tr>
-				<td>M P</td>
-				<td>-k, -g, -r, -c, -cz, -dz</td>
-				<td>-'y</td>
-			</tr>
-			<tr>
-				<td>&exist;</td>
-				<td>-</td>
-				<td>-e</td>
-			</tr>
+			<tr> <th class="red", colspan="4">Adjetivos</th> </tr>
+			<tr> <th rowspan="4" >Singular</th> <th>Gênero</th> <th colspan="2">Final</th> </tr>
+			<tr> <td>Masculino</td> <td colspan="2">-y, -i</td> </tr>
+			<tr> <td>Feminino</td> <td colspan="2">-a</td> </tr>
+			<tr> <td>Neutro</td> <td colspan="2">-e, -ie</td> </tr>
+			<tr> <th rowspan="3">Plural</th> <th>Gênero</th> <th>Quando</th> <th>Final</th> </tr>
+			<tr> <td>Masculino homem</td> <td>-k, -g, -r, -c, -cz, -dz</td> <td>-'y</td> </tr>
+			<tr> <td>Outros</td> <td>-</td> <td>-e</td> </tr>
 		</table>
 		</div>
 
 		<div>
 		<h2>Acusativo</h2>
 		<table>
-			<tr>
-				<th colspan="4">Substantivos</th>
-			</tr>
-			<tr>
-				<th rowspan="4">Singular</th>
-				<th>Gênero</th>
-				<th>Quando</th>
-				<th>Final</th>
-			</tr>
-			<tr>
-				<td>F</td>
-				<td>-a, -i</td>
-				<td>-ę</td>
-			</tr>
-			<tr>
-				<td rowspan="2">M V</td>
-				<td>-a</td>
-				<td>-ę</td>
-			</tr>
-			<tr>
-				<td>-C</td>
-				<td>-a</td>
-			</tr>
-			<tr>
-				<th colspan="3">Plural</th>
-				<td rowspan="3">M P</td>
-			</tr>
+			<tr> <th colspan="4">Substantivos</th> </tr>
+			<tr> <th rowspan="4">Singular</th> <th>Gênero</th> <th>Quando</th> <th>Final</th> </tr>
+			<tr> <td>Feminino</td> <td>-a, -i</td> <td>-ę</td> </tr>
+			<tr> <td rowspan="2">Masculino vivo</td> <td>-a</td> <td>-ę</td> </tr>
+			<tr> <td>Consoante</td> <td>-a</td> </tr>
+			<tr> <th rowspan="4">Plural</th> <th>Gênero</th> <th>Quando</th> <th>Final</th> </tr>
+			<tr> <td rowspan="3">Masculino homem</td> <td>Consoante forte</td> <td>-ów</td> </tr>
+			<tr> <td>Consoante fortificada</td> <td>-y</td> </tr>
+			<tr> <td>Consoante fraca</td> <td>-i</td> </tr>
+		</table>
+		<table>
+			<tr> <th colspan="3">Adjetivos</th> </tr>
+			<tr> <th rowspan="3">Singular</th> <th>Gênero</th> <th>Final</th> </tr>
+			<tr> <td>Feminino</td> <td>-ą</td> </tr>
+			<tr> <td>Masculino vivo</td> <td>-ego</td> </tr>
+			<tr> <th rowspan="4">Plural</th> <th>Gênero</th> <th>Final</th> </tr>
+			<tr> <td>Masculino homem</td> <td>-ych</td> </tr>
+		</table>
+		<p><strong>Observação:</strong> aqueles que não possuem entrada nas tabelas são iguais ao caso nominativo.</p>
+		</div>
+
+		<div>
+		<h2>Genitivo</h2>
+		<table>
+			<tr> <th colspan="4">Substantivos</th> </tr>
+			<tr> <th rowspan="8">Singular</th> <th>Gênero</th> <th>Quando</th> <th>Final</th> </tr>
+			<tr> <td rowspan="2">Masculino vivo</td> <td>Consoante</td> <td>-a</td> </tr>
+			<tr> <td>-a</td> <td>-y</td> </tr>
+			<tr> <td rowspan="2">Masculino não-vivo</td> <td>Maioria</td> <td>-u</td> </tr>
+			<tr> <td>Outros</td> <td>-a</td> </tr>
+			<tr> <td rowspan="2">Feminino</td> <td>Consoante forte, fortificada</td> <td>-y</td> </tr>
+			<tr> <td>Consoante fraca</td> <td>-i</td> </tr>
+			<tr> <td>Neutro</td> <td>-</td> <td>-a</td> </tr>
+			<tr> <th rowspan="7">Plural</th> <th>Gênero</th> <th>Quando</th> <th>Final</th> </tr>
+			<tr> <td rowspan="3">Masculino</td> <td>Consoante forte, c</td> <td>-ów</td> </tr>
+			<tr> <td>Consoante fortificada</td> <td>-y</td> </tr>
+			<tr> <td>Consoante fraca</td> <td>-i</td> </tr>
+			<tr> <td rowspan="2">Feminino</td> <td>Consoante fortificada</td> <td>-y</td> </tr>
+			<tr> <td>-a, -i</td> <td>-Ø</td> </tr>
+			<tr> <td>Neutro</td> <td>-</td> <td>-Ø</td> </tr>
+		</table>
+		<table>
+			<tr> <th colspan="3">Adjetivos</th> </tr>
+			<tr> <th rowspan="4">Singular</th> <th>Gênero</th> <th>Final</th> </tr>
+			<tr> <td>Masculino</td> <td>-ego</td> </tr>
+			<tr> <td>Feminino</td> <td>-ej</td> </tr>
+			<tr> <td>Neutro</td> <td>-ego</td> </tr>
+			<tr> <th rowspan="3">Plural</th> <th>Gênero</th> <th>Final</th> </tr>
+			<tr> <td>Todos</td> <td>-ych</td> </tr>
 		</table>
 		</div>
+
+		<div>
+		<h2>Dativo</h2>
+		<table>
+			<tr> <th colspan="4">Substantivos</th> </tr>
+			<tr> <th rowspan="7">Singular</th> <th>Gênero</th> <th>Quando</th> <th>Final</th> </tr>
+			<tr> <td rowspan="2">Masculino</td> <td>Monossilábicos</td> <td>-u</td> </tr>
+			<tr> <td>Outros</td> <td>-owi</td> </tr>
+			<tr> <td rowspan="3">Feminino<strong>¹</strong></td> <td>Consoante forte</td> <td>-'e</td> </tr>
+			<tr> <td>Consoante fortificada</td> <td>-y</td> </tr>
+			<tr> <td>Consoante fraca</td> <td>-i</td> </tr>
+			<tr> <td>Neutro</td> <td>Sempre</td> <td>-u</td> </tr>
+			<tr> <th rowspan="2">Plural</th> <th>Gênero</th> <th colspan="2">Final</th> </tr>
+			<tr> <td>Todos</td> <td colspan="2">-om</td> </tr>
+		</table>
+		<p><strong>¹igual ao locativo singular</strong></p>
+		<table>
+			<tr> <th colspan="3">Adjetivos</th> </tr>
+			<tr> <th rowspan="4">Singular</th> <th>Gênero</th> <th>Final</th> </tr>
+			<tr> <td>Masculino</td> <td>-emu</td> </tr>
+			<tr> <td>Feminino</td> <td>-ej</td> </tr>
+			<tr> <td>Neutro</td> <td>-emu</td> </tr>
+			<tr> <th rowspan="2">Plural</th> <th>Gênero</th> <th>Final</th> </tr>
+			<tr> <td>Todos</td> <td>-ym</td> </tr>
+		</table>
+		</div>
+
+		<div>
+		<h2>Instrumental</h2>
+		<table>
+			<tr> <th colspan="3">Substantivos</th> </tr>
+			<tr> <th rowspan="4">Singular</th> <th>Gênero</th> <th>Final</th> </tr>
+			<tr> <td>Masculino</td> <td>-em</td> </tr>
+			<tr> <td>Feminino</td> <td>-ą</td> </tr>
+			<tr> <td>Neutro</td> <td>-em</td> </tr>
+			<tr> <th rowspan="2">Plural</th> <th>Gênero</th> <th>Final</th> </tr>
+			<tr> <td>Todos</td> <td>-ami</td> </tr>
+		</table>
+		<table>
+			<tr> <th colspan="3">Adjetivos</th> </tr>
+			<tr> <th rowspan="4">Singular</th> <th>Gênero</th> <th>Final</th> </tr>
+			<tr> <td>Masculino</td> <td>-ym</td> </tr>
+			<tr> <td>Feminino</td> <td>-ą</td> </tr>
+			<tr> <td>Neutro</td> <td>-ym</td> </tr>
+			<tr> <th rowspan="2">Plural</th> <th>Gênero</th> <th>Final</th> </tr>
+			<tr> <td>Todos</td> <td>-ymi</td> </tr>
+		</table>
+		</div>
+
+		<div>
+		<h2>Locativo</h2>
+		<table>
+			<tr> <th colspan="4">Substantivos</th> </tr>
+			<tr> <th rowspan="6">Singular</th> <th>Gênero</th> <th>Quando</th> <th>Final</th> </tr>
+			<tr> <td rowspan="2">Masculino e neutro<strong>¹</strong></td> <td>Consoante forte, menos -k, -g, -ch</td> <td>-'e</td> </tr>
+			<tr> <td>Outros</td> <td>-u</td> </tr>
+			<tr> <td rowspan="3">Feminino<strong>²</strong></td> <td>Consoante forte</td> <td>-'e</td> </tr>
+			<tr> <td>Consoante fortificada</td> <td>-y</td> </tr>
+			<tr> <td>Consoante fraca</td> <td>-i</td> </tr>
+			<tr> <th rowspan="2">Plural</th> <th>Gênero</th> <th colspan="2">Final</th> </tr>
+			<tr> <td>Todos</td> <td colspan="2">-ach</td> </tr>
+		</table>
+		<p><strong>¹igual ao vocativo singular<br>²igual ao dativo singular</strong></p>
+		<table>
+			<tr> <th colspan="3">Adjetivos</th> </tr>
+			<tr> <th rowspan="4">Singular</th> <th>Gênero</th> <th>Final</th> </tr>
+			<tr> <td>Masculino</td> <td>-ym</td> </tr>
+			<tr> <td>Feminino</td> <td>-ej</td> </tr>
+			<tr> <td>Neutro</td> <td>-ym</td> </tr>
+			<tr> <th rowspan="2">Plural</th> <th>Gênero</th> <th>Final</th> </tr>
+			<tr> <td>Todos</td> <td>-ych</td> </tr>
+		</table>
+		</div>
+		
+		<div>
+		<h2>Vocativo</h2>
+		<table>
+			<tr> <th colspan="4">Substantivos</th> </tr>
+			<tr> <th rowspan="5">Singular</th> <th>Gênero</th> <th>Quando</th> <th>Final</th> </tr>
+			<tr> <td rowspan="2">Masculino e neutro<strong>¹</strong></td> <td>Consoante forte, menos -k, -g, -ch</td> <td>-'e</td> </tr>
+			<tr> <td>Outros</td> <td>-u</td> </tr>
+			<tr> <td rowspan="2">Feminino</td> <td>-a</td> <td>-o</td> </tr>
+			<tr> <td><em>Alguns</em></td> <td>-u</td> </tr>
+		</table>
+		<p><strong>¹igual ao locativo singular</strong></p>
+		<p><strong>Observação:</strong> aqueles que não possuem entrada na tabela, e tabelas omitidas, são iguais ao caso nominativo.</p>
+		</div>
+
 	</body>
 </html>
