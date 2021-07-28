@@ -1,12 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 	<head>
-		<title>Tabelas</title>
-		<link rel="stylesheet" href="stylesheet.css">
+		<title>Gramática Polonês - Referência</title>
+		<meta charset="utf-8">
+		<link rel="icon" href="icon.jpg">
+<style>
+.no-dot::marker {
+	content: '';
+}
+h2 {
+	margin-top: 2em;
+}
+
+header h1 {
+	text-align: center;
+	color: white;
+	margin: 0;
+	font-size: 2.2rem;
+}
+
+header {
+	background-color: black;
+	margin: -2rem;
+	padding: .8rem;
+	position: relative;
+	top: -4.1rem;
+	border-radius: 2rem 2rem 0 0;
+	box-shadow: 1rem 1rem 1rem #81181d;
+	z-index: -1;
+}
+
+body {
+	background-color: #D22630;
+	font-family: sans-serif;
+}
+
+main {
+	margin: 6rem 13% 5rem;
+	background-color: white;
+	padding: 2rem;
+	box-shadow: 1rem 1rem 1rem #81181d;
+}
+
+#sumario {
+	border: 3px solid #AAAAAA;
+	padding: 1em;
+	width: 60%;
+	background-color: #DDDDDD;
+}
+
+#sumario li, #sumario ul {
+	margin-left: 2em;
+}
+
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+a:visited {
+	color: blue;
+}
+
+a:hover {
+	color: #D22630;
+}
+
+#sumario li {
+	margin-top: .3em;
+}
+
+#download {
+	background-color: #D22630;
+	color: white;
+	padding: .5em;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+#download:hover {
+	background-color: black;
+}
+
+div {
+	width: 100%;
+	display: block;
+	page-break-after: always;
+	margin-top: 1em;
+}
+
+div:first-of-type {
+	margin-top: 0px;
+}
+
+table {
+	margin-top: 1em;
+	width: 100%;
+}
+
+h2:first-child {
+	margin-top: 0px;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: .2em 0em;
+	text-align: center;
+}
+
+.no-border, .no-border th, .no-border td {
+	border: none;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+.u {
+	text-decoration: underline;
+}
+
+p {
+	text-align: justify;
+}
+
+@media print {
+	body {
+		background-color: white;
+		font-family: serif;
+		font-size: 1.1rem;
+	}
+	main {
+		margin: 0;
+		padding: 0;
+		box-shadow: none;
+	}
+	header {
+		box-shadow: none;
+		background-color: white;
+		margin: 15em 0;
+		page-break-after: always;
+	}
+	header h1 {
+		color: black;
+	}
+	a, a:visited {
+		color: black;
+	}
+	.hide-print {
+		display: none;
+	}
+}
+</style>
 	</head>
 	<body>
+	<main>
+		<header class="hide-print"> <h1>Gramática Polonês - Referência</h1> </header>
+		<p class="hide-print">Use esta página como referência da gramática polonesa.</p>
+		<h1 class="hide-print">Sumário</h1>
+		<div class="hide-print">
+		<a href="./tabelas.pdf"><span id="download">&darr; PDF</span></a>
+		<ul id="sumario"> </ul>
+		</div>
 
-		<h1>Referência</h1>
+		<h1 id="regras">Regras Gerais</h1>
+		<article>
 		<div>
 		<h2>Classificação das Consoantes</h2>
 		<ul>
@@ -14,7 +175,7 @@
 			<li><u>Fortificadas</u></li>
 			<li>Fracas</li>
 		</ul>
-		<table class="empty">
+		<table class="no-border">
 			<tr class="strong u">
 				<td>m</td><td>b</td><td>p</td><td>w</td><td>f</td><td>n</td><td>d</td><td>t</td><td>z</td>
 				<td>s</td><td>ł</td><td>r</td><td>g/gi</td><td>k/ki</td><td>h/hi</td><td>ch/chi</td>
@@ -27,16 +188,166 @@
 				<td>cz</td><td>j</td>
 			</tr>
 		</table>
-		<h2>Regras Especiais</h2>
+		<p>Letras omitidas são fortes. Para cada consoante forte no esquema acima, a letra abaixo é sua correspondente enfraquecida.
+		Ao longo deste documento, a notação <strong>-'</strong> como final indica que é para enfraquecer uma consoante forte antes, ou fortalecer
+		uma consoante fraca ou fortificada antes, usando sua correspondente, se existir, ao invés.</p>
+		<h2 id="ortografia">Ortografia</h2>
 		<ul>
-			<li><strong>k</strong> e <strong>g</strong> nunca vão antes de <strong>y</strong>, nesses casos o <strong>y</strong> vira <strong>i</strong>. </li>
+			<li><strong>k</strong> e <strong>g</strong> nunca vão antes de <strong>y</strong>, nesses casos o <strong>y</strong> vira <strong>i</strong>; </li>
+			<li><strong>rz</strong> e <strong>sz</strong> nunca vão antes de <strong>i</strong>, nesses casos o <strong>i</strong> vira <strong>y</strong>. </li>
+		</ul>
+		<p>Nas declinações:</p>
+		<ul>
+			<li>Um <strong>e</strong> antes da última consoante pode sumir;</li>
+			<li>Um <strong>ó</strong> pode virar <strong>o</strong>;</li>
+			<li>Um <strong>ą</strong> pode virar <strong>ę</strong>.</li>
+		</ul>
+		</div>
+		</article>
+
+		<h1 id="casos">Casos Gramaticais</h1>
+		<article>
+		<div>
+		<h2>O Que São</h2>
+		<p>Diferentemente do Português, o Polonês possui casos gramaticais. Dependendo da função do substantivo numa frase,
+		ele estará flexionado (seu final e possivelmente seu radical mudarão) de acordo com as tabelas de declinação.
+		Além do caso, na inflexão são levados em conta o gênero, o final do caso nominativo e o número. Adjetivos também são flexionados,
+		porém sempre acompanhando seus respectivos substantivos em caso, número e gênero. Para o propósito de simplificação, pronomes pessoais
+		são substantivos.</p>
+		<p>A seguir, são listados os casos e seus principais usos.</p>
+
+		<h2>Nominativo</h2>
+		<p>Nominativo singular (masculino) é forma de dicionário (<em>lemma</em>), também usada como base das declinações.</p>
+		<h3>Sujeito</h3>
+		<p>Quem executa a ação.</p>
+		<ul>
+			<li><strong>Czarny pies</strong> szczeka;</li>
+			<li><em><strong>O cachorro preto</strong> late;</em></li>
+			<li><strong>Dom</strong> jest <strong>duży</strong>;</li>
+			<li><em><strong>A casa</strong> é <strong>grande</strong>.</em></li>
+		</ul>
+
+		<h2>Acusativo</h2>
+		<h3>Objeto Direto Positivo</h3>
+		<p>Quem recebe a ação (positiva) diretamente.</p>
+		<ul>
+			<li>Czarny pies ma <strong>długi ogon</strong>;</li>
+			<li><em>O cachorro preto tem <strong>rabo longo</strong>;</em></li>
+			<li>Lubię <strong>jabłka</strong>;</li>
+			<li>Gosto de <strong>maçãs</strong>;</li>
+			<li>Piszę <strong>moje imię</strong>;</li>
+			<li>Escrevo <strong>meu nome</strong>.</li>
+		</ul>
+		<h3>Preposições</h3>
+		<ul>
+			<li>Przechodzę <span class="u">przez</span> <strong>ulicę</strong>;</li>
+			<li>Atravesso <span class="u">através</span> da <strong>rua</strong>.</li>
 		</ul>
 		</div>
 
 		<div>
+		<h2>Genitivo</h2>
+		<h3>Objeto Direto Negativo</h3>
+		<p>Quem recebe a ação (negativa) diretamente.</p>
+		<ul>
+			<li>Czarny pies nie ma <strong>długiego ogona</strong>;</li>
+			<li><em>O cachorro preto não tem <strong>rabo longo</strong>;</em></li>
+			<li>Dom nie ma <strong>okien</strong>;</li>
+			<li><em>A casa não tem <strong>janelas</strong></em>.</li>
+		</ul>
+		<h3>Possessão</h3>
+		<p>Quem possui algo.</p>
+		<ul>
+			<li>Dom <strong>przyjaciela</strong> jest duży;</li>
+			<li><em>A casa <strong>do amigo</strong> é grande;</em></li>
+			<li>Podoba mi się obraz <strong>artysty</strong>;</li>
+			<li>Agrada-me a obra <strong>do artista</strong>.</li>
+		</ul>
+		<h3>Quantidades (Expressões "de quê")</h3>
+		<p>Ver seção dos numerais cardinais para detalhes.</p>
+		<ul>
+			<li>Mam szklankę <strong>wody</strong>;</li>
+			<li><em>Tenho um copo <strong>d'água</strong>;</em></li>
+			<li>Pięć <strong>samochodów</strong> jest <strong>zepsutych</strong>;</li>
+			<li><em>Cinco <strong>carros</strong> estão <strong>quebrados</strong>.</em></li>
+		</ul>
+		<h3>Preposições</h3>
+		<p>Algumas preposições podem forçar este caso, mesmo onde seria outro:</p>
+		<ul>
+			<li>Idę <span class="u">do</span> <strong>pracy</strong>;</li>
+			<li>Vou <span class="u">ao</span> <strong>trabalho</strong>.</li>
+		</ul>
+		</div>
+
+		<div>
+		<h2>Dativo</h2>
+		<h3>Objeto Indireto</h3>
+		<p>Quem recebe a ação diretamente. Normalmente quem recebe algo de presente ou pagamento.</p>
+		<ul>
+			<li>Daję pieniądze <strong>sprzedawcy</strong>;</li>
+			<li><em>Dou dinherio <strong>ao vendedor</strong>;</em></li>
+			<li>Kupuję <strong>mu</strong> prezent;</li>
+			<li><em>Compro <strong>a ele</strong> um presente.</em></li>
+		</ul>
+
+		<h2>Instrumental</h2>
+		<h3>Instrumento da Ação</h3>
+		<p>Meios pelos quais a ação é realizada.</p>
+		<ul>
+			<li>Poszedłem <strong>samolotem</strong>;</li>
+			<li><em>Fui <strong>de avião</strong>;</em></li>
+			<li>Przybijałem <strong>młotkiem</strong>;</li>
+			<li><em>Preguei <strong>com um martelo</strong>.</em></li>
+		</ul>
+		<h3>Período de Tempo</h3>
+		<p>Precisa ser um período, não um ponto único/específico.</p>
+		<ul>
+			<li><strong>Zimą</strong> używam buty;</li>
+			<li><em><strong>Durante o inverno</strong> uso botas.</em></li>
+		</ul>
+		<h3>Objeto Direto do Verbo Być</h3>
+		<ul>
+			<li>Jesteś <strong>polakiem</strong>;</li>
+			<li><em>És <strong>um polaco</strong>.</em></li>
+		</ul>
+		<h3>Preposições</h3>
+		<ul>
+			<li>Powiedziełem <span class="u">z</span> <strong>nim</strong>;</li>
+			<li><em>Falei <span class="u">com</span> <strong>ele</strong>.</em></li>
+		</ul>
+		</div>
+
+		<div>
+		<h2>Locativo</h2>
+		<h3>Preposições</h3>
+		<p>A maioria indica posição estática.</p>
+		<ul>
+			<li>Jestem <span class="u">w</span> <strong>Polsce</strong>;</li>
+			<li>Estou <span class="u">na</span> <strong>Polônia</strong>;</li>
+			<li>To jest <span class="u">przy</span> <strong>stole</strong>;</li>
+			<li>Isto está <span class="u">ao lado da</span> <strong>mesa</strong>;</li>
+		</ul>
+
+		<h2>Vocativo</h2>
+		<h3>Chamar Atenção</h3>
+		<p>Serve para chamar pessoas e possivelmente animais.</p>
+		<ul>
+			<li><strong>Drugi przyjacielu</strong>, ...</li>
+			<li><em><strong>Caro amigo</strong>, ...</em></li>
+			<li><strong>Matko</strong>!</li>
+			<li><em><strong>Mãe</strong>!</em></li>
+			<li><strong>Panie</strong>, zwróć uwagę;</li>
+			<li><em><strong>Senhor</strong>, preste atenção.</em></li>
+		</ul>
+		</div>
+		</article>
+
+		<h1 id="declinacoes">Declinações de Substantivos e Adjetivos</h1>
+		<article>
+		<div>
 		<h2>Nominativo</h2>
 		<table>
-			<tr> <th class="blue", colspan="4">Substantivos</th> </tr>
+			<tr> <th colspan="4">Substantivos</th> </tr>
 			<tr> <th rowspan="4" >Singular</th> <th>Gênero</th> <th colspan="2">Final</th> </tr>
 			<tr> <td>Masculino</td> <td colspan="2">Consoante</td> </tr>
 			<tr> <td>Feminino</td> <td colspan="2">-a, -i</td> </tr>
@@ -52,19 +363,20 @@
 		</table>
 
 		<table>
-			<tr> <th class="red", colspan="4">Adjetivos</th> </tr>
+			<tr> <th colspan="4">Adjetivos</th> </tr>
 			<tr> <th rowspan="4" >Singular</th> <th>Gênero</th> <th colspan="2">Final</th> </tr>
 			<tr> <td>Masculino</td> <td colspan="2">-y, -i</td> </tr>
 			<tr> <td>Feminino</td> <td colspan="2">-a</td> </tr>
 			<tr> <td>Neutro</td> <td colspan="2">-e, -ie</td> </tr>
-			<tr> <th rowspan="3">Plural</th> <th>Gênero</th> <th>Quando</th> <th>Final</th> </tr>
-			<tr> <td>Masculino homem</td> <td>-k, -g, -r, -c, -cz, -dz</td> <td>-'y</td> </tr>
+			<tr> <th rowspan="4">Plural</th> <th>Gênero</th> <th>Quando</th> <th>Final</th> </tr>
+			<tr> <td rowspan="2">Masculino homem</td> <td>-k, -g, -r, -c, -cz, -dz</td> <td>-'y</td> </tr>
+			<tr> <td>Outros</td> <td>-i</td> </tr>
 			<tr> <td>Outros</td> <td>-</td> <td>-e</td> </tr>
 		</table>
 		</div>
 
 		<div>
-		<h2>Acusativo</h2>
+		<h2 id="acusativo">Acusativo</h2>
 		<table>
 			<tr> <th colspan="4">Substantivos</th> </tr>
 			<tr> <th rowspan="4">Singular</th> <th>Gênero</th> <th>Quando</th> <th>Final</th> </tr>
@@ -81,14 +393,14 @@
 			<tr> <th rowspan="3">Singular</th> <th>Gênero</th> <th>Final</th> </tr>
 			<tr> <td>Feminino</td> <td>-ą</td> </tr>
 			<tr> <td>Masculino vivo</td> <td>-ego</td> </tr>
-			<tr> <th rowspan="4">Plural</th> <th>Gênero</th> <th>Final</th> </tr>
+			<tr> <th rowspan="2">Plural</th> <th>Gênero</th> <th>Final</th> </tr>
 			<tr> <td>Masculino homem</td> <td>-ych</td> </tr>
 		</table>
-		<p><strong>Observação:</strong> aqueles que não possuem entrada nas tabelas são iguais ao caso nominativo.</p>
+		<p class="obs"><strong>Observação:</strong> aqueles que não possuem entrada nas tabelas são iguais ao caso nominativo.</p>
 		</div>
 
 		<div>
-		<h2>Genitivo</h2>
+		<h2 id="genitivo">Genitivo</h2>
 		<table>
 			<tr> <th colspan="4">Substantivos</th> </tr>
 			<tr> <th rowspan="8">Singular</th> <th>Gênero</th> <th>Quando</th> <th>Final</th> </tr>
@@ -113,13 +425,13 @@
 			<tr> <td>Masculino</td> <td>-ego</td> </tr>
 			<tr> <td>Feminino</td> <td>-ej</td> </tr>
 			<tr> <td>Neutro</td> <td>-ego</td> </tr>
-			<tr> <th rowspan="3">Plural</th> <th>Gênero</th> <th>Final</th> </tr>
+			<tr> <th rowspan="2">Plural</th> <th>Gênero</th> <th>Final</th> </tr>
 			<tr> <td>Todos</td> <td>-ych</td> </tr>
 		</table>
 		</div>
 
 		<div>
-		<h2>Dativo</h2>
+		<h2 id="dativo">Dativo</h2>
 		<table>
 			<tr> <th colspan="4">Substantivos</th> </tr>
 			<tr> <th rowspan="7">Singular</th> <th>Gênero</th> <th>Quando</th> <th>Final</th> </tr>
@@ -132,7 +444,7 @@
 			<tr> <th rowspan="2">Plural</th> <th>Gênero</th> <th colspan="2">Final</th> </tr>
 			<tr> <td>Todos</td> <td colspan="2">-om</td> </tr>
 		</table>
-		<p><strong>¹igual ao locativo singular</strong></p>
+		<p class="obs"><strong>¹</strong>igual ao locativo singular</p>
 		<table>
 			<tr> <th colspan="3">Adjetivos</th> </tr>
 			<tr> <th rowspan="4">Singular</th> <th>Gênero</th> <th>Final</th> </tr>
@@ -145,7 +457,7 @@
 		</div>
 
 		<div>
-		<h2>Instrumental</h2>
+		<h2 id="instrumental">Instrumental</h2>
 		<table>
 			<tr> <th colspan="3">Substantivos</th> </tr>
 			<tr> <th rowspan="4">Singular</th> <th>Gênero</th> <th>Final</th> </tr>
@@ -167,7 +479,7 @@
 		</div>
 
 		<div>
-		<h2>Locativo</h2>
+		<h2 id="locativo">Locativo</h2>
 		<table>
 			<tr> <th colspan="4">Substantivos</th> </tr>
 			<tr> <th rowspan="6">Singular</th> <th>Gênero</th> <th>Quando</th> <th>Final</th> </tr>
@@ -179,7 +491,7 @@
 			<tr> <th rowspan="2">Plural</th> <th>Gênero</th> <th colspan="2">Final</th> </tr>
 			<tr> <td>Todos</td> <td colspan="2">-ach</td> </tr>
 		</table>
-		<p><strong>¹igual ao vocativo singular<br>²igual ao dativo singular</strong></p>
+		<p class="obs"><strong>¹</strong>igual ao vocativo singular<br>²igual ao dativo singular</p>
 		<table>
 			<tr> <th colspan="3">Adjetivos</th> </tr>
 			<tr> <th rowspan="4">Singular</th> <th>Gênero</th> <th>Final</th> </tr>
@@ -192,7 +504,7 @@
 		</div>
 		
 		<div>
-		<h2>Vocativo</h2>
+		<h2 id="vocativo">Vocativo</h2>
 		<table>
 			<tr> <th colspan="4">Substantivos</th> </tr>
 			<tr> <th rowspan="5">Singular</th> <th>Gênero</th> <th>Quando</th> <th>Final</th> </tr>
@@ -201,9 +513,2349 @@
 			<tr> <td rowspan="2">Feminino</td> <td>-a</td> <td>-o</td> </tr>
 			<tr> <td><em>Alguns</em></td> <td>-u</td> </tr>
 		</table>
-		<p><strong>¹igual ao locativo singular</strong></p>
-		<p><strong>Observação:</strong> aqueles que não possuem entrada na tabela, e tabelas omitidas, são iguais ao caso nominativo.</p>
+		<p class="obs"><strong>¹</strong>igual ao locativo singular</p>
+		<p class="obs"><strong>Observação:</strong> aqueles que não possuem entrada na tabela, e tabelas omitidas, são iguais ao caso nominativo.</p>
 		</div>
 
+		<div>
+		<h2 id="adjetivos-simples">Adjetivos - Tabelas Simples</h2>
+		<table>
+			<tr> <th colspan="4">Nominativo/Vocativo</th> </tr>
+			<tr> <th rowspan="4" >Singular</th> <th>Gênero</th> <th colspan="2">Final</th> </tr>
+			<tr> <td>Masculino</td> <td colspan="2">-y, -i</td> </tr>
+			<tr> <td>Feminino</td> <td colspan="2">-a</td> </tr>
+			<tr> <td>Neutro</td> <td colspan="2">-e, -ie</td> </tr>
+			<tr> <th rowspan="4">Plural</th> <th>Gênero</th> <th>Quando</th> <th>Final</th> </tr>
+			<tr> <td rowspan="2">Masculino homem</td> <td>-k, -g, -r, -c, -cz, -dz</td> <td>-'y</td> </tr>
+			<tr> <td>Outros</td> <td>-i</td> </tr>
+			<tr> <td>Outros</td> <td>-</td> <td>-e</td> </tr>
+		</table>
+
+		<table>
+		<tr> <th colspan="7">Outros Casos</th> </tr>
+		<tr> 
+			<th rowspan="2">Caso</th>
+			<th colspan="4">Singular</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino<br>Homens</th>
+			<th>Masculino<br>Não-Homens</th>
+			<th>Neutro</th>
+			<th>Feminino</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>-ego</td>
+			<td>-e</td>
+			<td>-y</td>
+			<td>-ę</td>
+			<td>-ych</td>
+			<td>-e</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="3">-emu</td>
+			<td rowspan="3">-ej</td>
+			<td colspan="2">-ym</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="3">-ego</td>
+			<td colspan="2" rowspan="2">-ych</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan ="2" colspan="3">-ym</td>
+		</tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>tą</td>
+			<td colspan="2">-ymi</td>
+		</tr>
+		</table>
+		
+		</div>
+
+		<div>
+		<h2 id="neutros">Declinação de Substantivos Neutros em -ę, -ię</h2>
+		<table>
+			<tr> <th rowspan="2">Caso</th> <th colspan="2">-ę</th> <th colspan="2">-ię</th> </tr>
+			<tr> <th>Singular</th> <th>Plural</th> <th>Singular</th> <th>Plural</th> </tr>
+			<tr> <th>Nominativo</th> <td rowspan="3">-ę</td> <td rowspan="3">-ęta</td> <td rowspan="3">-ię</td> <td rowspan="3">-iona</td> </tr>
+			<tr> <th>Acusativo</th> </tr>
+			<tr> <th>Vocativo</th> </tr>
+			<tr> <th>Genitivo</th> <td>-ęcia</td> <td>-ąt</td> <td>-ienia</td> <td>-ion</td> </tr>
+			<tr> <th>Dativo</th> <td rowspan="2">-ęciu</td> <td>-ętom</td> <td rowspan="2">-ieniu</td> <td>-ionom</td> </tr>
+			<tr> <th>Locativo</th> <td>-ętach</td> <td>-ionach</td> </tr>
+			<tr> <th>Instrumental</th> <td>-ęciem</td> <td>-ętami</td> <td>-ieniem</td> <td>-ionami</td> </tr>
+		</table>
+		<p class="obs"><strong>Observação:</strong> Alguns em -ię declinam como -ę.</p>
+		</div>
+		</article>
+
+		<h1 id="pronomes">Declinações de Pronomes</h1>
+		<article>
+		<div>
+		<h2>Pronomes Pessoais</h2>
+		<table>
+		<tr>
+			<th colspan="10">Gerais</th>
+		</tr>
+		<tr>
+			<th rowspan="3">Caso</th>
+			<th colspan="5">Singular</th>
+			<th colspan="4">Plural</th>
+		</tr>
+		<tr>
+			<th>1ªP.</th>
+			<th>2ªP.</th>
+			<th colspan="3">3ªP.</th>
+			<th>1ªP.</th>
+			<th>2ªP.</th>
+			<th colspan="2">3ªP.</th>
+		</tr>
+		<tr>
+			<th>Eu</th>
+			<th>Tu</th>
+			<th>Ele</th>
+			<th>Ele (n)</th>
+			<th>Ela</th>
+			<th>Nós</th>
+			<th>Vós</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td>ja</td>
+			<td rowspan="2">ty</td>
+			<td>on</td>
+			<td>ono</td>
+			<td>ona</td>
+			<td>my</td>
+			<td rowspan="2">wy</td>
+			<td>oni</td>
+			<td>one</td>
+		</tr>
+		<tr>
+			<th>Vocativo</th>
+			<td>-</td>
+			<td colspan="3">-</td>
+			<td>-</td>
+			<td colspan="2">-</td>
+		</tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>mną</td>
+			<td>tobą</td>
+			<td rowspan ="2" colspan="2">nim</td>
+			<td>nią</td>
+			<td>nami</td>
+			<td>wami</td>
+			<td colspan="2">nimi</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan="3">mnie</td>
+			<td>tobie</td>
+			<td>niej</td>
+			<td rowspan="3">nas</td>
+			<td rowspan="3">was</td>
+			<td colspan="2">nich</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td rowspan="2">cię</td>
+			<td rowspan="2">go</td>
+			<td>je</td>
+			<td>ją</td>
+			<td rowspan="2">ich</td>
+			<td>je</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td>go</td>
+			<td rowspan="2">jej</td>
+			<td>ich</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td>mi</td>
+			<td>ci</td>
+			<td colspan="2">mu</td>
+			<td>nam</td>
+			<td>wam</td>
+			<td colspan="2">im</td>
+		</tr>
+		</table>
+
+		<table>
+		<tr>
+			<th colspan="6">Enfáticos<strong>¹</strong></th>
+		</tr>
+		<tr>
+			<th rowspan="3">Caso</th>
+			<th colspan="5">Singular</th>
+		</tr>
+		<tr>
+			<th>1ªP.</th>
+			<th>2ªP.</th>
+			<th colspan="3">3ªP.</th>
+		</tr>
+		<tr>
+			<th>Eu</th>
+			<th>Tu</th>
+			<th>Ele</th>
+			<th>Ele (n)</th>
+			<th>Ela</th>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td rowspan="2">-</td>
+			<td rowspan="2">cię</td>
+			<td rowspan="2">jego</td>
+			<td colspan="2">-</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td>jego</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td>mnie</td>
+			<td>tobie</td>
+			<td colspan="2">jemu</td>
+			<td>-</td>
+		</tr>
+		</table>
+
+		<p class="obs"><strong>¹</strong>Usados no começo de frases ou para ênfase.</p>
+		<p class="obs"><strong>Observação:</strong> os omitidos são iguais aos pronomes pessoais gerais.</p>
+		<table>
+		<tr>
+			<th colspan="6">Preposicionais<strong>²</strong></th>
+		</tr>
+		<tr>
+			<th rowspan="3">Caso</th>
+			<th colspan="3">Singular</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th colspan="5">3ªP.</th>
+		</tr>
+		<tr>
+			<th>Ele</th>
+			<th>Ele (n)</th>
+			<th>Ela</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td rowspan="2">niego</td>
+			<td>nie</td>
+			<td>nią</td>
+			<td>nich</td>
+			<td>nie</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td>niego</td>
+			<td>niej</td>
+			<td colspan="2">nich</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="2">niemu</td>
+			<td>niej</td>
+			<td colspan="2">nim</td>
+		</tr>
+		</table>
+		<p class="obs"><strong>²</strong>Usados após preposições.</p>
+		<p class="obs"><strong>Observação:</strong> os omitidos são iguais aos pronomes pessoais enfáticos.</p>
+
+		</div>
+
+		<div>
+		<h2 id="especiais">Pronomes Especiais</h2>
+		<table>
+		<tr> <th colspan="5">Interrogativos</th> </tr>
+		<tr>
+			<th>Caso</th>
+			<th>Quem</th>
+			<th>Ninguém</th>
+			<th>O Quê</th>
+			<th>Nada</th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td>kto</td>
+			<td>nikt</td>
+			<td rowspan="2">co</td>
+			<td rowspan="2">nic</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td rowspan="2">kogo</td>
+			<td rowspan="2">nikogo</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td>czego</td>
+			<td>niczego/nic</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td>komu</td>
+			<td>nikomu</td>
+			<td>czemu<strong>³</strong></td>
+			<td>niczemu</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan="2">kim</td>
+			<td rowspan="2">nikim</td>
+			<td rowspan="2">czym</td>
+			<td rowspan="2">niczym</td>
+		</tr>
+		<tr> <th>Instrumental</th> </tr>
+		</table>
+		<p><strong>³</strong>Às vezes usado como dlaczego (por que)</p>
+
+		<table>
+		<tr>
+			<th colspan="3">Indefinidos</th>
+		</tr>
+		<tr>
+			<th>Caso</th>
+			<th>Alguém</th>
+			<th>Algo</th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td>ktoś</td>
+			<td rowspan="2">coś</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td rowspan="2">kogoś</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td>czegoś</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td>komuś</td>
+			<td>czemuś</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan="2">kimś</td>
+			<td rowspan="2">czymś</td>
+		</tr>
+		<tr> <th>Instrumental</th> </tr>
+		</table>
+
+		<table>
+		<tr>
+			<th colspan="3">Outros Interrogativos</th>
+		</tr>
+		<tr>
+			<th>Caso</th>
+			<th>Qualquer Pessoa</th>
+			<th>Qualquer Objeto</th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td>ktokolwiek</td>
+			<td rowspan="2">cokolwiek</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td rowspan="2">kogokolwiek</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td>czegokolwiek</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td>komukolwiek</td>
+			<td>czemukolwiek</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan="2">kimkolwiek</td>
+			<td rowspan="2">czymkolwiek</td>
+		</tr>
+		<tr> <th>Instrumental</th> </tr>
+		</table>
+
+		</div>
+
+		<div>
+		<h2 id="interrogativos-adjetivos">Interrogativos Como Adjetivos</h2>
+		
+		<table>
+		<tr> <th colspan="7">Jaki - Como</th> </tr>
+		<tr>
+			<th rowspan="2">Caso</th>
+			<th colspan="4">Singular</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino<br>Homens</th>
+			<th>Masculino<br>Não-Homens</th>
+			<th>Neutro</th>
+			<th>Feminino</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td colspan="2">jaki</td>
+			<td rowspan="2">jakie</td>
+			<td>jaka</td>
+			<td>jacy</td>
+			<td rowspan="2">jakie</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>jakiego</td>
+			<td>jaki</td>
+			<td>jaką</td>
+			<td>jakich</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="3">jakiemu</td>
+			<td rowspan="3">jakiej</td>
+			<td colspan="2">jakim</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="3">jakiego</td>
+			<td colspan="2" rowspan="2">jakich</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan="2" colspan="3">jakim</td>
+		</tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>jaką</td>
+			<td colspan="2">jakimi</td>
+		</tr>
+		</table>
+
+		
+
+		<table>
+		<tr> <th colspan="7">Który - Qual</th> </tr>
+		<tr>
+			<th rowspan="2">Caso</th>
+			<th colspan="4">Singular</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino<br>Homens</th>
+			<th>Masculino<br>Não-Homens</th>
+			<th>Neutro</th>
+			<th>Feminino</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td colspan="2">który</td>
+			<td rowspan="2">które</td>
+			<td>która</td>
+			<td>którzy</td>
+			<td rowspan="2">które</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>którego</td>
+			<td>który</td>
+			<td>którą</td>
+			<td>których</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="3">któremu</td>
+			<td rowspan="3">której</td>
+			<td colspan="2">którym</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="3">którego</td>
+			<td colspan="2" rowspan="2">których</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan="2" colspan="3">którym</td>
+		</tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>którą</td>
+			<td colspan="2">którymi</td>
+		</tr>
+		</table>
+
+		
+
+		<table>
+		<tr> <th colspan="7">Czyj - De Quem</th> </tr>
+		<tr>
+			<th rowspan="2">Caso</th>
+			<th colspan="4">Singular</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino<br>Homens</th>
+			<th>Masculino<br>Não-Homens</th>
+			<th>Neutro</th>
+			<th>Feminino</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td colspan="2">czyj</td>
+			<td rowspan="2">czyje</td>
+			<td>czyja</td>
+			<td>czyi</td>
+			<td rowspan="2">czyje</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>czyjego</td>
+			<td>czyj</td>
+			<td>czyją</td>
+			<td>czyich</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="3">czyjemu</td>
+			<td rowspan="3">czyjej</td>
+			<td colspan="2">czyim</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="3">czyjego</td>
+			<td colspan="2" rowspan="2">czyich</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan="2" colspan="3">czyim</td>
+		</tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>czyją</td>
+			<td colspan="2">czyimi</td>
+		</tr>
+		</table>
+		</div>
+
+		<div>
+		<table>
+		<tr> <th colspan="7">Czyjś - De Alguém</th> </tr>
+		<tr>
+			<th rowspan="2">Caso</th>
+			<th colspan="4">Singular</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino<br>Homens</th>
+			<th>Masculino<br>Não-Homens</th>
+			<th>Neutro</th>
+			<th>Feminino</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td colspan="2">czyjś</td>
+			<td rowspan="2">czyjeś</td>
+			<td>czyjaś</td>
+			<td>czyiś</td>
+			<td rowspan="2">czyjeś</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>czyjegoś</td>
+			<td>czyjś</td>
+			<td>czyjąś</td>
+			<td>czyichś</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="3">czyjemuś</td>
+			<td rowspan="3">czyjejś</td>
+			<td colspan="2">czyimś</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="3">czyjegoś</td>
+			<td colspan="2" rowspan="2">czyichś</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan="2" colspan="3">czyimś</td>
+		</tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>czyjąś</td>
+			<td colspan="2">czyimiś</td>
+		</tr>
+		</table>
+
+		<table>
+		<tr> <th colspan="7">Czyjkolwiek - De Qualquer Pessoa</th> </tr>
+		<tr>
+			<th rowspan="2">Caso</th>
+			<th colspan="4">Singular</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino<br>Homens</th>
+			<th>Masculino<br>Não-Homens</th>
+			<th>Neutro</th>
+			<th>Feminino</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td colspan="2">czyjkolwiek</td>
+			<td rowspan="2">czyjekolwiek</td>
+			<td>czyjakolwiek</td>
+			<td>czyikolwiek</td>
+			<td rowspan="2">czyjekolwiek</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>czyjegokolwiek</td>
+			<td>czyjkolwiek</td>
+			<td>czyjąkolwiek</td>
+			<td>czyichkolwiek</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="3">czyjemukolwiek</td>
+			<td rowspan="3">czyjejkolwiek</td>
+			<td colspan="2">czyimkolwiek</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="3">czyjegokolwiek</td>
+			<td colspan="2" rowspan="2">czyichkolwiek</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan="2" colspan="3">czyimkolwiek</td>
+		</tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>czyjąkolwiek</td>
+			<td colspan="2">czyimikolwiek</td>
+		</tr>
+		</table>
+		</div>
+
+		<div>
+		<h2 id="demonstrativos">Pronomes Demonstrativos</h2>
+		<p>São adjetivos e declinam como tais.</p>
+		<table>
+		<tr> <th colspan="7">Ten - Este/Esse</th> </tr>
+		<tr> 
+			<th rowspan="2">Caso</th>
+			<th colspan="4">Singular</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino<br>Homens</th>
+			<th>Masculino<br>Não-Homens</th>
+			<th>Neutro</th>
+			<th>Feminino</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td colspan="2">ten</td>
+			<td rowspan="2">to</td>
+			<td>ta</td>
+			<td>ci</td>
+			<td rowspan="2">te</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>tego</td>
+			<td>ten</td>
+			<td>tę</td>
+			<td>tych</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="3">temu</td>
+			<td rowspan="3">tej</td>
+			<td colspan="2">tym</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="3">tego</td>
+			<td colspan="2" rowspan="2">tych</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan ="2" colspan="3">tym</td>
+		</tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>tą</td>
+			<td colspan="2">tymi</td>
+		</tr>
+		</table>
+
+		<table>
+		<tr> <th colspan="7">Tamten - Aquele</th> </tr>
+		<tr> 
+			<th rowspan="2">Caso</th>
+			<th colspan="4">Singular</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino<br>Homens</th>
+			<th>Masculino<br>Não-Homens</th>
+			<th>Neutro</th>
+			<th>Feminino</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td colspan="2">tamten</td>
+			<td rowspan="2">tamto</td>
+			<td>tamta</td>
+			<td>tamci</td>
+			<td rowspan="2">tamte</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>tamtego</td>
+			<td>tamten</td>
+			<td>tamtą</td>
+			<td>tamtych</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="3">tamtemu</td>
+			<td rowspan="3">tamtej</td>
+			<td colspan="2">tamtym</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="3">tamtego</td>
+			<td colspan="2" rowspan="2">tamtych</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan ="2" colspan="3">tamtym</td>
+		</tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>tamtą</td>
+			<td colspan="2">tamtymi</td>
+		</tr>
+		</table>
+		</div>
+		
+		<div>
+		<h2 id="possessivos">Pronomes Possessivos</h2>
+		<p>São adjetivos e declinam como tais.</p>
+		<h3>1ª Pessoa</h3>
+		<table>
+		<tr> <th colspan="7">Mój - Meu</th> </tr>
+		<tr>
+			<th rowspan="2">Caso</th>
+			<th colspan="4">Singular</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino<br>Homens</th>
+			<th>Masculino<br>Não-Homens</th>
+			<th>Neutro</th>
+			<th>Feminino</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td colspan="2">mój</td>
+			<td rowspan="2">moje</td>
+			<td>moja</td>
+			<td>moi</td>
+			<td rowspan="2">moje</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>mojego</td>
+			<td>mój</td>
+			<td>moją</td>
+			<td>moich</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="3">mojemu</td>
+			<td rowspan="3">mojej</td>
+			<td colspan="2">moim</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="3">mojego</td>
+			<td colspan="2" rowspan="2">moich</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan="2" colspan="3">moim</td>
+		</tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>moją</td>
+			<td colspan="2">moimi</td>
+		</tr>
+		</table>
+
+		<table>
+		<tr> <th colspan="7">Mój (Curto) - Meu</th> </tr>
+		<tr>
+			<th rowspan="2">Caso</th>
+			<th colspan="4">Singular</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino<br>Homens</th>
+			<th>Masculino<br>Não-Homens</th>
+			<th>Neutro</th>
+			<th>Feminino</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td colspan="2">mój</td>
+			<td rowspan="2">me</td>
+			<td>ma</td>
+			<td>moi</td>
+			<td rowspan="2">me</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>mego</td>
+			<td>mój</td>
+			<td>mą</td>
+			<td>mych</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="3">memu</td>
+			<td rowspan="3">mej</td>
+			<td colspan="2">mym</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="3">mego</td>
+			<td colspan="2" rowspan="2">mych</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan="2" colspan="3">mym</td>
+		</tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>mą</td>
+			<td colspan="2">mymi</td>
+		</tr>
+		</table>
+
+		<table>
+		<tr> <th colspan="7">Nasz - Nosso</th> </tr>
+		<tr>
+			<th rowspan="2">Caso</th>
+			<th colspan="4">Singular</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino<br>Homens</th>
+			<th>Masculino<br>Não-Homens</th>
+			<th>Neutro</th>
+			<th>Feminino</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td colspan="2">nasz</td>
+			<td rowspan="2">nasze</td>
+			<td>nasza</td>
+			<td>naszi</td>
+			<td rowspan="2">nasze</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>naszego</td>
+			<td>nasz</td>
+			<td>naszą</td>
+			<td>naszych</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="3">naszemu</td>
+			<td rowspan="3">naszej</td>
+			<td colspan="2">naszym</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="3">naszego</td>
+			<td colspan="2" rowspan="2">naszych</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan="2" colspan="3">naszym</td>
+		</tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>naszą</td>
+			<td colspan="2">naszymi</td>
+		</tr>
+		</table>
+		</div>
+
+		<div>
+		<h3>2ª Pessoa</h3>
+		<table>
+		<tr> <th colspan="7">Twój - Teu</th> </tr>
+		<tr>
+			<th rowspan="2">Caso</th>
+			<th colspan="4">Singular</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino<br>Homens</th>
+			<th>Masculino<br>Não-Homens</th>
+			<th>Neutro</th>
+			<th>Feminino</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td colspan="2">twój</td>
+			<td rowspan="2">twoje</td>
+			<td>twoja</td>
+			<td>twoi</td>
+			<td rowspan="2">twoje</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>twojego</td>
+			<td>twój</td>
+			<td>twoję</td>
+			<td>twoich</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="3">twojemu</td>
+			<td rowspan="3">twojej</td>
+			<td colspan="2">twoim</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="3">twojego</td>
+			<td colspan="2" rowspan="2">twoich</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan="2" colspan="3">twoim</td>
+		</tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>twoją</td>
+			<td colspan="2">twoimi</td>
+		</tr>
+		</table>
+
+
+		<table>
+		<tr> <th colspan="7">Twój (Curto) - Teu</th> </tr>
+		<tr>
+			<th rowspan="2">Caso</th>
+			<th colspan="4">Singular</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino<br>Homens</th>
+			<th>Masculino<br>Não-Homens</th>
+			<th>Neutro</th>
+			<th>Feminino</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td colspan="2">twój</td>
+			<td rowspan="2">twe</td>
+			<td>twa</td>
+			<td>twoi</td>
+			<td rowspan="2">twe</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>twego</td>
+			<td>twój</td>
+			<td>twą</td>
+			<td>twych</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="3">twemu</td>
+			<td rowspan="3">twej</td>
+			<td colspan="2">twym</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="3">twego</td>
+			<td colspan="2" rowspan="2">twych</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan="2" colspan="3">twym</td>
+		</tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>twą</td>
+			<td colspan="2">twymi</td>
+		</tr>
+		</table>
+
+
+		<table>
+		<tr> <th colspan="7">Wasz - Nosso</th> </tr>
+		<tr>
+			<th rowspan="2">Caso</th>
+			<th colspan="4">Singular</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino<br>Homens</th>
+			<th>Masculino<br>Não-Homens</th>
+			<th>Neutro</th>
+			<th>Feminino</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td colspan="2">wasz</td>
+			<td rowspan="2">wasze</td>
+			<td>wasza</td>
+			<td>wasi</td>
+			<td rowspan="2">wasze</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>waszego</td>
+			<td>wasz</td>
+			<td>waszą</td>
+			<td>waszych</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="3">waszemu</td>
+			<td rowspan="3">waszej</td>
+			<td colspan="2">waszym</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="3">waszego</td>
+			<td colspan="2" rowspan="2">waszych</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan="2" colspan="3">waszym</td>
+		</tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>waszą</td>
+			<td colspan="2">waszymi</td>
+		</tr>
+		</table>
+		</div>
+
+		<div>
+		<h3>3ª Pessoa</h3>
+		Pronome pessoal enfático no caso genitivo.
+		<ul>
+			<li>Jego &rarr; Dele;</li>
+			<li>Jej &rarr; Dela;</li>
+			<li>Ich &rarr; Deles.</li>
+		</ul>
+
+		<h3>Impessoal</h3>
+
+
+
+		<table>
+		<tr> <th colspan="7">Swój - Seu Próprio</th> </tr>
+		<tr>
+			<th rowspan="2">Caso</th>
+			<th colspan="4">Singular</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino<br>Homens</th>
+			<th>Masculino<br>Não-Homens</th>
+			<th>Neutro</th>
+			<th>Feminino</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td colspan="2">swój</td>
+			<td rowspan="2">swoje</td>
+			<td>swoja</td>
+			<td>swoi</td>
+			<td rowspan="2">swoje</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>swojego</td>
+			<td>swój</td>
+			<td>swoją</td>
+			<td>swoich</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="3">swojemu</td>
+			<td rowspan="3">swojej</td>
+			<td colspan="2">swoim</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="3">swojego</td>
+			<td colspan="2" rowspan="2">swoich</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan="2" colspan="3">swoim</td>
+		</tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>swoją</td>
+			<td colspan="2">swoimi</td>
+		</tr>
+		</table>
+
+		<table>
+		<tr> <th colspan="7">Swój (Curto) - Seu Próprio</th> </tr>
+		<tr>
+			<th rowspan="2">Caso</th>
+			<th colspan="4">Singular</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino<br>Homens</th>
+			<th>Masculino<br>Não-Homens</th>
+			<th>Neutro</th>
+			<th>Feminino</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td colspan="2">swój</td>
+			<td rowspan="2">swe</td>
+			<td>swa</td>
+			<td>swoi</td>
+			<td rowspan="2">swe</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>swego</td>
+			<td>swój</td>
+			<td>swą</td>
+			<td>swych</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="3">swemu</td>
+			<td rowspan="3">swej</td>
+			<td colspan="2">swym</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="3">swego</td>
+			<td colspan="2" rowspan="2">swych</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan="2" colspan="3">swym</td>
+		</tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>swą</td>
+			<td colspan="2">swymi</td>
+		</tr>
+		</table>
+		</div>
+
+		<div>
+		<h2 id="invariaveis">Pronomes Invariáveis</h2>
+		<table>
+		<tr>
+			<th>Pronome</th>
+			<th>Tradução</th>
+		</tr>
+		<tr>
+			<td>gdzie</td>
+			<td>onde</td>
+		</tr>
+		<tr>
+			<td>gdzieś</td>
+			<td>algum lugar</td>
+		</tr>
+		<tr>
+			<td>gdziekolwiek</td>
+			<td>qualquer lugar</td>
+		</tr>
+		<tr>
+			<td>dokąd</td>
+			<td>para onde</td>
+		</tr>
+		<tr>
+			<td>dokądś</td>
+			<td>para algum lugar</td>
+		</tr>
+		<tr>
+			<td>dokądkolwiek</td>
+			<td>para qualquer lugar</td>
+		</tr>
+		<tr>
+			<td>skąd</td>
+			<td>de onde</td>
+		</tr>
+		<tr>
+			<td>skądinąd</td>
+			<td>de outro lugar</td>
+		</tr>
+		<tr>
+			<td>skądś</td>
+			<td>de algum lugar</td>
+		</tr>
+		<tr>
+			<td>skądkolwiek</td>
+			<td>de qualquer lugar</td>
+		</tr>
+		<tr>
+			<td>wszędzie</td>
+			<td>todo lugar</td>
+		</tr>
+		</table>
+		</div>
+		</article>
+
+		<h1 id="tempos">Conjugações: Tempos</h1>
+		<article>
+		<div>
+		<h2>Presente</h2>
+		<p>Apenas verbos imperfectivos possuem esta forma.</p>
+		<table>
+			<tr> <th colspan="3">Grupo I (-e-)</th> </tr>
+			<tr> <th>Pessoa</th> <th>Singular</th> <th>Plural</th> </tr>
+			<tr> <td>1ª</td> <td>-ę</td> <td>-emy</td> </tr>
+			<tr> <td>2ª</td> <td>-esz</td> <td>-ecie</td> </tr>
+			<tr> <td>3ª</td> <td>-e</td> <td>-ą</td> </tr>
+		</table>
+		<table>
+			<tr> <th colspan="3">Grupo II A (-i-)</th> </tr>
+			<tr> <th>Pessoa</th> <th>Singular</th> <th>Plural</th> </tr>
+			<tr> <td>1ª</td> <td>-ę</td> <td>-imy</td> </tr>
+			<tr> <td>2ª</td> <td>-isz</td> <td>-icie</td> </tr>
+			<tr> <td>3ª</td> <td>-i</td> <td>-ą</td> </tr>
+		</table>
+		<table>
+			<tr> <th colspan="3">Grupo II B (-y-)</th> </tr>
+			<tr> <th>Pessoa</th> <th>Singular</th> <th>Plural</th> </tr>
+			<tr> <td>1ª</td> <td>-ę</td> <td>-ymy</td> </tr>
+			<tr> <td>2ª</td> <td>-ysz</td> <td>-ycie</td> </tr>
+			<tr> <td>3ª</td> <td>-y</td> <td>-ą</td> </tr>
+		</table>
+		<table>
+			<tr> <th colspan="3">Grupo III A (-a-)</th> </tr>
+			<tr> <th>Pessoa</th> <th>Singular</th> <th>Plural</th> </tr>
+			<tr> <td>1ª</td> <td>-am</td> <td>-amy</td> </tr>
+			<tr> <td>2ª</td> <td>-asz</td> <td>-acie</td> </tr>
+			<tr> <td>3ª</td> <td>-a</td> <td>-ają</td> </tr>
+		</table>
+		<table>
+			<tr> <th colspan="3">Grupo III B (-e-)</th> </tr>
+			<tr> <th>Pessoa</th> <th>Singular</th> <th>Plural</th> </tr>
+			<tr> <td>1ª</td> <td>-em</td> <td>-emy</td> </tr>
+			<tr> <td>2ª</td> <td>-esz</td> <td>-ecie</td> </tr>
+			<tr> <td>3ª</td> <td>-e</td> <td>-eją</td> </tr>
+		</table>
+		<h3>Mudanças de Radicais</h3>
+		<ul>
+			<li>-ować &rarr; -uj (Grupo I);</li>
+			<li>-awać &rarr; -aj (Grupo I);</li>
+			<li>Radicais curtos normalmente adicionam -j, e entram no Grupo I;</li>
+			<li>O radical da 3ªP.P. é sempre o mesmo da 1ªP.S.; ex.: iść: idę &rarr; idą (outras formas: idzie-);</li>
+			<li>Outros radicais, como os em -ść e -źć, normalmente mudam irregularmente.</li>
+		</ul>
+		</div>
+
+		<div>
+		<h2 id="passado">Passado</h2>
+		<p>Estes finais entram no lugar do "ć" do infinitivo. 
+		Alguns finais, -m, -ś, -śmy, -ście, informalmente podem ser realocados para o final da primeira palavra da frase.</p>
+		<table>
+			<tr> <th rowspan="2">Pessoa</th> <th colspan="3">Singular</th> <th colspan="2">Plural</th> </tr>
+			<tr> <th>Masculino</th> <th>Feminino</th> <th>Neutro</th> <th><em>Oni</em></th> <th><em>One</em></th> </tr>
+			<tr> <th>1ª</th> <td>-ł-em</td> <td>-ł-am</td> <td>-</td> <td>-l-iśmy</td> <td>-ł-yśmy</td> </tr>
+			<tr> <th>2ª</th> <td>-ł-eś</td> <td>-ł-aś</td> <td>-</td> <td>-l-iście</td> <td>-ł-yście</td> </tr>
+			<tr> <th>3ª</th> <td>-ł-Ø</td> <td>-ł-a</td> <td>-ł-o</td> <td>-l-i</td> <td>-ł-y</td> </tr>
+		 </table>
+		 <h3>Mudanças de Radicais</h3>
+		 <ul>
+			<li>Um <strong>e</strong> antes do <strong>ł</strong> vira <strong>a</strong>;</li>
+			<li>Um <strong>ą</strong> antes do <strong>ł/l</strong> vira <strong>ę</strong>, exceto no masculino singular;</li>
+		 	<li>O radical masculino singular pode ser único.</li>
+		 </ul>
+
+		<h2 id="futuro">Futuro</h2>
+		<h3>Verbos Perfectivos</h3>
+		<p>Mesmos regras e finais do tempo presente para verbos imperfectivos.</p>
+		<h3>Verbos Imperfectivos</h3>
+		<p>Futuro do verbo być + passado 3ªP ou infinitivo (incomum).</p>
+		<table>
+			<tr> <th colspan="3">Być - Futuro</th> </tr>
+			<tr> <th>Pessoa</th> <th>Singular</th> <th>Plural</th> </tr>
+			<tr> <th>1ª</th> <td>będę</td> <td>będziemy</td> </tr>
+			<tr> <th>2ª</th> <td>będziesz</td> <td>będziecie</td> </tr>
+			<tr> <th>3ª</th> <td>będzie</td> <td>będą</td> </tr>
+		</table>
+		</div>
+		</article>
+
+		<h1 id="modos">Conjugações: Modos</h1>
+		<article>
+		<div>
+		<h2>Imperativo</h2>
+		<h3>Uso</h3>
+		<ul>
+			<li>Verbos imperfectivos: indicam ordem <em>para agora</em> ou <em>para sempre</em>;</li>
+			<li>Verbos perfectivos: indicam ordem de uma ação <em>única e completa</em>.</li>
+		</ul>
+		<h3>Formalidade</h3>
+		<p>O modo imperativo é informal. Para pedidos formais use:</p>
+		<ul>
+			<li><strong>Proszę</strong> + infinitivo do verbo perfectivo;</li>
+			<li><strong>Proszę nie</strong> + infinitivo do verbo imperfectivo.</li>
+		</ul>
+		<p>A 3ªP do modo imperativo também é bastante formal.</p>
+		<h3>Formação</h3>
+		<h4>Base</h4>
+		<p>Grupos: mesmos das tabelas do presente. Em relação à 3ªP.S.:</p>
+		<table>
+		<tr>
+			<th>Grupo</th>
+			<th>Remover</th>
+			<th>Adicionar</th>
+			<th>Enfraquecer</th>
+		</tr>
+		<tr>
+			<th>I, II</th>
+			<td>-e, -i, -y</td>
+			<td>Após várias consoantes,<br>-ij ou -yj</td>
+			<td>-c, -n, -s, -z, -dz;<br>Se <strong>o</strong> é vogal mais forte, o&rarr;ó</td>
+		</tr>
+		<tr>
+			<th>III</th>
+			<td>-</td>
+			<td>-j</td>
+			<td>-</td>
+		</tr>
+		</table>
+		<h4>Formas</h4>
+		<table>
+		<tr>
+			<th>Número</th>
+			<th>Pessoa</th>
+			<th>Como Formar</th>
+		</tr>
+		<tr>
+			<th rowspan="3">Singular</th>
+			<th>1ª</th>
+			<td><strong>niech</strong> + presente (imperfectivos) ou futuro (perfectivos) da 1ªP.S.</td>
+		</tr>
+		<tr>
+			<th>2ª</th>
+			<td>base</td>
+		</tr>
+		<tr>
+			<th>3ª</th>
+			<td><strong>niech</strong> + presente (imperfectivos) ou futuro (perfectivos) da 3ªP.S.</td>
+		</tr>
+		<tr>
+			<th rowspan="3">Plural</th>
+			<th>1ª</th>
+			<td>base + -my</td>
+		</tr>
+		<tr>
+			<th>2ª</th>
+			<td>base + -cie</td>
+		</tr>
+		<tr>
+			<th>3ª</th>
+			<td><strong>niech</strong> + presente (imperfectivos) ou futuro (perfetivos) da 3ªP.P.</td>
+		</tr>
+		</table>
+		</div>
+
+		<div>
+		<h2 id="condicional">Condicional</h2>
+		<h3>Uso</h3>
+		<table class="no-border">
+		<tr><th colspan="7">Condições possíveis</th></tr>
+		<tr>
+			<td><strong>jeśli(...)</strong> ou <br><strong>jeżeli(...)</strong> (se)</td>
+			<td>+</td>
+			<td>cláusula subordinada<br>com verbo condicional</td>
+			<td>+</td>
+			<td><strong>to</strong></td>
+			<td>+</td>
+			<td>cláusula principal<br>com verbo no presente/futuro</td>
+		</tr>
+		</table>
+		<table class="no-border">
+		<tr>
+			<td>cláusula principal<br>com verbo no presente/futuro</td>
+			<td>+</td>
+			<td><strong>jeśli(...)</strong> ou <br><strong>jeżeli(...)</strong> (se)</td>
+			<td>+</td>
+			<td>cláusula subordinada<br>com verbo condicional</td>
+		</tr>
+		</table>
+		<table class="no-border">
+		<tr><th colspan="7">Condições hipóteticas</th></tr>
+		<tr>
+			<td><strong>gdy(...)</strong> ou <br><strong>jak(...)</strong> (se)</td>
+			<td>+</td>
+			<td>cláusula subordinada<br>com verbo condicional</td>
+			<td>+</td>
+			<td><strong>to</strong></td>
+			<td>+</td>
+			<td>cláusula principal <br>com verbo condicional</td>
+		</tr>
+		</table>
+		<table class="no-border">
+		<tr>
+			<td>cláusula principal <br>com verbo condicional</td>
+			<td>+</td>
+			<td><strong>gdy(...)</strong> ou <br><strong>jak(...)</strong></td>
+			<td>+</td>
+			<td>cláusula subordinada <br>com verbo condicional</td>
+		</tr>
+		</table>
+		<table class="no-border">
+		<tr><th colspan="5">Impossibilidades</th></tr>
+		<tr>
+			<td>cláusula subordinada<br>com verbo condicional</td>
+			<td>+</td>
+			<td><strong>ale</strong></td>
+			<td>+</td>
+			<td>cláusula (negativa) principal<br>com verbo no passado/presente</td>
+		</tr>
+		</table>
+		<h3>Desconectando o Final</h3>
+		<p>Pode-se desconectar o final <strong>by</strong> junto com tudo que vem depois, numa palavra separada, a qual normalmente é colocada após a primeira palavra da frase. Esta desconexão é obrigatória para reconectar o final em <strong>jeśli, jeżeli, gdy</strong> e <strong>jak</strong>.</p>
+		<h3>Exemplos (em ordem)</h3>
+		<ul>
+			<li>Jeśli<strong>by</strong>/Jeżeli<strong>by</strong> nie <strong>było</strong> pociągu, to pojadę autobusem;</li>
+			<li><em>Se não <strong>houver</strong> trem, irei de ônibus;</em></li>
+			<li>Pojadę autobusem, jeśli<strong>by</strong>/jeżeli<strong>by</strong> nie <strong>było</strong> pociągu;</li>
+			<li><em>Irei de ônibus, se não <strong>houver</strong> trem;</em></li>
+			<li>Gdy<strong>bym</strong>/Jak<strong>bym miał</strong> pieniądze, to <strong>kupiłbym</strong> dom;</li>
+			<li>Gdy<strong>bym</strong>/Jak<strong>bym miał</strong> pieniądze, to <strong>bym kupił</strong> dom;</li>
+			<li><em>Se <strong>eu tivesse</strong> dinheiro, <strong>compraria</strong> uma casa
+			(ambíguo, pode ser tanto no passado ou futuro);</em></li>
+			<li><strong>Kupiłbym</strong> dom, ale nie mam/miałem pieniędzy;</li>
+			<li><em><strong>Eu compraria</strong> uma casa, mas não tenho/tinha dinheiro.</em></li>
+		</ul>
+		<h3>Formação</h3>
+		<p>Formado pela inserção da partícula <strong>by</strong> após a parte do final do passado que indica o gênero (o <strong>e</strong> do masculino some).</p>
+		<table>
+			<tr> <th rowspan="2">Pessoa</th> <th colspan="3">Singular</th> <th colspan="2">Plural</th> </tr>
+			<tr> <th>Masculino</th> <th>Feminino</th> <th>Neutro</th> <th><em>Oni</em></th> <th><em>One</em></th> </tr>
+			<tr> <th>1ª</th> <td>-ł-by-m</td> <td>-ła-by-m</td> <td>-</td> <td>-li-by-śmy</td> <td>-ły-by-śmy</td> </tr>
+			<tr> <th>2ª</th> <td>-ł-by-ś</td> <td>-ła-by-ś</td> <td>-</td> <td>-li-by-ście</td> <td>-ły-by-ście</td> </tr>
+			<tr> <th>3ª</th> <td>-ł-by</td> <td>-ła-by</td> <td>-ło-by</td> <td>-li-by</td> <td>-ły-by</td> </tr>
+		</table>
+		</div>
+
+		<div>
+		<h2 id="participio-adverbial-presente">Particípio Adverbial - Presente</h2>
+		<p>Apenas verbos imperfectivos possuem esta forma. Para formar o particípio adverbial contemporâneo, adiciona-se -c à 3ªP.P. do presente.</p>
+		<h3>Uso</h3>
+		<p>Esta forma do verbo serve para indicar ações simultâneas. Exemplo:</p>
+		<ul>
+			<li><strong>Słuchając</strong> muzyki, ubrałem się;</li>
+			<li><em><strong>Ouvindo</strong> música, vesti-me.</em></li>
+		</ul>
+		<h3>Mudança de Sujeito</h3>
+		<p>Já que esta forma verbal é na verdade um advérbio, quando muda-se de sujeito, não se pode usá-la. Usa-se <strong>jak</strong> com uma cláusula subordinada:</p>
+		<ul>
+			<li>Patrzę na nią <strong>gotując (ERRADO);</strong></li>
+			<li><em>Olho ela <strong>cozinhando</strong>.</em></li>
+			<li>Patrzę, jak ona gotuje <strong>(CORRETO);</strong></li>
+			<li><em>Olho como ela cozinha (tradução literal, mas o significado é o mesmo da última tradução).</em></li>
+		</ul>
+		</div>
+
+		<div>
+		<h2 id="participio-adverbial-passado">Particípio Adverbial - Passado</h2>
+		<p>Apenas verbos perfectivos possuem esta forma. Para formar o pretérito do particípio adverbial, remove-se -łem da 1ªP.S.M. do passado e adiciona-se -wszy depois de uma vogal ou -łszy depois de uma consoante.</p>
+		<h3>Uso</h3>
+		<p>Esta forma do verbo serve para indicar ação em sequência. Exemplo:</p>
+		<ul>
+			<li><strong>Przeczytawszy</strong> czasopismo, wyszedłem z domu;</li>
+			<li><em><strong>Tendo lido</strong> a revista, saí de casa.</em></li>
+		</ul>
+		<h3>Mudança de Sujeito</h3>
+		<p>Usa-se <strong>jak</strong> com uma cláusula subordinada:</p>
+		<ul>
+			<li><strong>Usłyszawszy</strong>, jak ktoś pukał, otworzyłem drzwi;</li>
+			<li><em><strong>Tendo ouvido</strong> alguém batendo, abri a porta.</em></li>
+		</ul>
+		</div>
+
+		<div>
+		<h2 id="participio-adjetival-ativo">Particípio Adjetival - Ativo</h2>
+		<p>Apenas verbos imperfectivos possuem esta forma. Para formá-la, basta adicionar o final de adjetivo adequado ao particípio adverbial presente do verbo.</p>
+		<h3>Uso</h3>
+		<p>Esta forma indica uma ação em progresso como um adjetivo. Exemplo:</p>
+		<ul>
+			<li>Widzę pana <strong>budującego</strong> dom;</li>
+			<li>Vejo um senhor <strong>construindo</strong> uma casa.</li>
+		</ul>
+		<p>Ou, com o pronome relativo <strong>który</strong>:</p>
+		<ul>
+			<li>Widzę pana, <strong>który</strong> buduje dom;</li>
+			<li>Vejo um senhor, <strong>o qual</strong> constrói uma casa.</li>
+		</ul>
+		</div>
+
+		<div>
+		<h2 id="participio-adjetival-passivo">Particípio Adjetival - Passivo</h2>
+		<h3>Uso</h3>
+		<p>Esta forma é um adjetivo, e pode ser usada como tal. Um dos usos mais úteis é para a voz passiva (quando o sujeito sofre a ação). Exemplo:</p>
+		<ul>
+			<li>Andrzej je zupę <strong>(ATIVA);</strong></li>
+			<li>Andrzej come a sopa;</li>
+			<li>Zupa jest <strong>jedzona</strong> przez Andrzeja <strong>(PASSIVA)</strong>;</li>
+			<li>A sopa é <strong>comida</strong> por Andrzej.</li>
+		</ul>
+		<h3>Formação</h3>
+		<table>
+			<tr><th rowspan="2">Quando</th><th rowspan="2">Remover</th><th colspan="2">Adicionar</th></tr>
+			<tr><th><em>On</em></th><th><em>Oni</em></th></tr>
+			<tr><td>-ać, -eć, -ieć</td><td>-ć/-eć</td><td>-any</td><td>-ani</td></tr>
+			<tr><td>-ić, -yć, -uć (-j no radical)</td><td>-ć</td><td>-ity</td><td>-ici</td></tr>
+			<tr><td>-ić, -yć</td><td>-ć/-yć</td><td>-ony</td><td>-eni</td></tr>
+			<tr><td>-ść (-d no radical)</td><td>-ść</td><td>-dziony</td><td>-dzeni</td></tr>
+			<tr><td>-ść (-t no radical)</td><td>-ść</td><td>-ciony</td><td>-ceni</td></tr>
+			<tr><td>-źć</td><td>-źć</td><td>-ziony</td><td>-zieni</td></tr>
+			<tr><td>-ąć</td><td>-ąć</td><td>-ęty</td><td>-ęci</td></tr>
+			<tr><td>-nąć</td><td>-nąć</td><td>-ięty</td><td>-ięci</td></tr>
+		</table>
+		<h3>Voz Passiva: Perfectivos</h3>
+		<p>Intuitivamente, usaria-se o verbo być. Porém, verbos perfectivos requerem <strong>zostać (perf., zostanę, zostaniesz)</strong> para a voz passiva.</p>
+		<h3>Voz Passiva: Agente</h3>
+		<p>Para sinalizar o agente da ação, usa-se a preposição <strong>przez</strong> seguida pelo caso acusativo.</p>
+		<h3>Voz Passiva: Agente Não-Específico</h3>
+		<p>Para frases passivas onde o agente da ação é irrelevante, usa-se o final -o.</p>
+		</div>
+		</article>
+
+		<h1 id="cardinais">Numerais: Cardinais</h1>
+		<article>
+		<div>
+		<h2>Expressões de Quantidade</h2>
+		<p>Uma palavra quantitativa, mais uma expressão "de quê" (substantivo com adjetivos opcionais), é chamada de expressão de quantidade.</p>
+		<ul>
+			<li>Palavra quantitativa segue o caso apropriado como de costume;</li>
+			<li>Nos casos nominativo, acusativo e genitivo: "de quê" é no genitivo;</li>
+			<li>Em outros casos, "de quê" também segue o caso apropriado;</li>
+			<li>"De quê" pode ser singular ou plural, e geralmente é singular para substantivos incontáveis e plural para contáveis;</li>
+			<li>A expressão de quantidade, agindo como sujeito, sempre requer um verbo singular;</li>
+			<li>A expressão pode ser composta/recursiva, ex.: pięć filiżanek wody (<em>cinco copos de água</em>);</li>
+			<li>Adjetivos referentes à expressão de quantidade, concordam em gênero, número e caso com a expressão "de quê".</li>
+		</ul>
+		<h2 id="numeros-tipos">Tipos de Números</h2>
+		<p>Os números de <strong>1</strong> a <strong>4</strong>, assim como números compostos que terminam com um destes (exceto 1, jeden), são adjetivos. Todos os outros são palavras quantitativas.</p>
+		<h2 id="compostos">Números Compostos</h2>
+		<p>Cada componente é adicionado um após o outro (na escrita, separados por espaços), assim como no Português.
+		Quase todos declinam normalmente de acordo com o caso, exceto:</p>
+		<ul>
+			<li>Jeden (<em>um</em>), que é invariável em números compostos;</li>
+			<li>Tysiąc (<em>mil</em>), milion (<em>milhão</em>), miliard (<em>bilhão</em>), bilion (<em>trilhão</em>), etc, que são considerados expressões "de quê".</li>
+		</ul>
+		</div>
+
+		<div>
+		<h2 id="numeros-declinacoes">Declinações</h2>
+		<table>
+		<tr> <th colspan="7">1, Jeden (adjetivo)</th> </tr>
+		<tr>
+			<th rowspan="2">Caso</th>
+			<th colspan="4">Singular</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino<br>Homens</th>
+			<th>Masculino<br>Não-Homens</th>
+			<th>Neutro</th>
+			<th>Feminino</th>
+			<th><em>Oni</em></th>
+			<th><em>One</em></th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td colspan="2">jeden</td>
+			<td rowspan="2">jedno</td>
+			<td>jedna</td>
+			<td>jedni</td>
+			<td rowspan="2">jedne</td>
+		</tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>jednego</td>
+			<td>jeden</td>
+			<td>jedną</td>
+			<td>jednych</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="3">jednemu</td>
+			<td rowspan="3">jednej</td>
+			<td colspan="2">jednym</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="3">jednego</td>
+			<td colspan="2" rowspan="2">jednych</td>
+		</tr>
+		<tr>
+			<th>Locativo</th>
+			<td rowspan="2" colspan="3">jednym</td>
+		</tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>jedną</td>
+			<td colspan="2">jednymi</td>
+		</tr>
+		</table>
+
+		<table>
+		<tr> <th colspan="4">2, Dwa (adjetivo)</th> </tr>
+		<tr> 
+			<th rowspan="2">Caso</th>
+			<th colspan="3">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino Homens</th> 
+			<th>Masculino Não-Homens e Neutro</th>
+			<th>Feminino</th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td rowspan="2">dwaj<strong>¹</strong></td>
+			<td rowspan="3">dwa</td>
+			<td rowspan="3">dwie</td>
+		</tr>
+		<tr> <th>Vocativo</th> </tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>dwóch<strong>²</strong></td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="3">dwóm<strong>²</strong></td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="3" rowspan="2">dwóch<strong>²</strong></td>
+		</tr>
+		<tr> <th>Locativo</th> </tr>
+		<tr>
+			<th>Instrumental</th>
+			<td colspan="2">dwoma<strong>²</strong></td>
+			<td>dwiema<strong>²</strong></td>
+		</tr>
+		</table>
+		<p class="obs"><strong>¹</strong>forma "dwóch" (palavra quantitativa, não adjetivo) usada coloquialmente<br>
+		<strong>²</strong>forma "dwa" aceitável coloquialmente</p>
+		<table>
+		<tr> <th colspan="3">3, Trzy; 4, Cztery (adjetivos)</th></tr>
+		<tr> 
+			<th rowspan="2">Caso</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino Homens</th> 
+			<th>Outros</th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td rowspan="2">-ej<strong>¹</strong></td>
+			<td rowspan="3">-y</td>
+		</tr>
+		<tr> <th>Vocativo</th> </tr>
+		<tr>
+			<th>Acusativo</th>
+			<td>-ech</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td colspan="2">-em</td>
+		</tr>
+		<tr>
+			<th>Genitivo</th>
+			<td colspan="2" rowspan="2">-ech</td>
+		</tr>
+		<tr> <th>Locativo</th> </tr>
+		<tr>
+			<th>Instrumental</th>
+			<td colspan="2">-ema</td>
+		</tr>
+		</table>
+		<p class="obs"><strong>¹</strong>forma "trzech/czterech" (palavras quantitativas, não adjetivos) usada coloquialmente</p>
+		</div>
+
+		<div>
+		<h3>Outros Números (Quantitativos)</h3>
+		<table>
+		<tr>
+			<th rowspan="2">Caso</th>
+			<th colspan="2">Plural</th>
+		</tr>
+		<tr>
+			<th>Masculino Homens</th>
+			<th>Outros</th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td rowspan="3">-'u</td>
+			<td rowspan="3">(não muda)</td>
+		</tr>
+		<tr> <th>Vocativo</th> </tr>
+		<tr> <th>Acusativo</th> </tr>
+		<tr>
+			<th>Dativo</th>
+			<td rowspan="3" colspan="2">-'u</td>
+		</tr>
+		<tr> <th>Genitivo</th> </tr>
+		<tr> <th>Locativo</th> </tr>
+		<tr>
+			<th>Instrumental</th>
+			<td colspan="2">-'oma</td>
+		</tr>
+		</table>
+		<p class="obs"><strong>Observação: </strong>Em números que terminam em -set (cem), estas mudanças ocorrem antes, ex.: pięćset &rarr; pię<strong>ciu</strong>set</p>
+		
+		<h2 id="lista-numeros">Lista de Números</h2>
+		<table class="no-border">
+		<tr>
+			<td>0</td>
+			<td>zero</td>
+			<td>1</td>
+			<td>jeden</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>dwa</td>
+			<td>20</td>
+			<td>dwadzieścia</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>trzy</td>
+			<td>30</td>
+			<td>trzydzieści</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>czery</td>
+			<td>40</td>
+			<td>czterdzieści</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>pięć</td>
+			<td>50</td>
+			<td>pięćdziesiąt</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>sześć</td>
+			<td>60</td>
+			<td>sześćdziesiąt</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>siedem</td>
+			<td>70</td>
+			<td>siedemdziesiąt</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>osiem</td>
+			<td>80</td>
+			<td>osiemdziesiąt</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>dziewięć</td>
+			<td>90</td>
+			<td>dziewięćdziesiąt</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>dziesięć</td>
+			<td>100</td>
+			<td>sto</td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>jedenaście</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>dwanaście</td>
+			<td>200</td>
+			<td>dwieście</td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td>trzynaście</td>
+			<td>300</td>
+			<td>trzysta</td>
+		</tr>
+		<tr>
+			<td>14</td>
+			<td>czternaście</td>
+			<td>400</td>
+			<td>czterysta</td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td>piętnaście</td>
+			<td>500</td>
+			<td>pięćset</td>
+		</tr>
+		<tr>
+			<td>16</td>
+			<td>szesnaście</td>
+			<td>600</td>
+			<td>sześćset</td>
+		</tr>
+		<tr>
+			<td>17</td>
+			<td>siedemnaście</td>
+			<td>700</td>
+			<td>siedemset</td>
+		</tr>
+		<tr>
+			<td>18</td>
+			<td>osiemnaście</td>
+			<td>800</td>
+			<td>osiemset</td>
+		</tr>
+		<tr>
+			<td>19</td>
+			<td>dwiewiętnaście</td>
+			<td>900</td>
+			<td>dziewięćset</td>
+		</tr>
+		<tr>
+			<td>1.000</td>
+			<td>tysiąc<br>(genitivo pl.: tysięcy)</td>
+			<td>1.000.000</td>
+			<td>milion<br>(genitivo pl.: milionów)</td>
+		</tr>
+		<tr>
+			<td>1.000.000.000</td>
+			<td>miliard<br>(genitivo pl.: miliardów)</td>
+			<td>1.000.000.000.000</td>
+			<td>bilion<br>(genitivo pl.: bilionów)</td>
+		</tr>
+		</table>
+		</div>
+		</article>
+
+		<h1 id="numeros-formas">Numerais: Outras Formas</h1>
+		<article>
+		<div>
+		<h2>Indefinidos</h2>
+		<p>São palavras quantitativas.</p>
+		<table class="no-border">
+		<tr>
+			<th>vários</th>	
+			<th>muitos</th>
+			<th>tantos</th>
+			<th>quantos</th>
+			<th>alguns</th>
+		</tr>
+		<tr>
+			<td>kilka</td>
+			<td>wiele</td>
+			<td>tyle</td>
+			<td>ile</td>
+			<td>parę</td>
+		</tr>
+		</table>
+		<table class="no-border">
+		<tr>
+			<th>11-19</th>
+			<th>dezenas</th>
+			<th>centenas</th>
+		</tr>
+		<tr>
+			<td>kilkanaście</td>
+			<td>kilkadziesiąt</td>
+			<td>kilkaset</td>
+		</tr>
+		</table>
+
+		<h2 id="coletivos">Coletivos</h2>
+		<p>Jeden (<em>um</em>) não possui esta forma. Usados para grupos mistos, crianças, animais pequenos e substantivos que só existem no plural. Seus radicais são formados pela adição de -or ao radical original (exceções: dwa - dw- &rarr; dwoj-; trzy - trz- &rarr; troj; cztery - czter- &rarr; czwor-). Também são palavras quantitativas. Declinação:</p>
+		<table>
+		<tr>
+			<th>Caso</th>
+			<th>Final</th>
+		</tr>
+		<tr>
+			<th>Nominativo</th>
+			<td rowspan="3">-o</td>
+		</tr>
+		<tr> <th>Vocativo</th> </tr>
+		<tr> <th>Acusativo</th> </tr>
+		<tr>
+			<th>Genitivo</th>
+			<td>-ga</td>
+		</tr>
+		<tr>
+			<th>Dativo</th>
+			<td rowspan="2">-gu</td>
+		</tr>
+		<tr> <th>Locativo</th> </tr>
+		<tr>
+			<th>Instrumental</th>
+			<td>-giem</td>
+		</tr>
+		</table>
+		</div>
+
+		<div>
+		<h2 id="ordinais">Ordinais</h2>
+		<p>São adjetivos. Para formar compostos, apenas adicione um após o outro (separados por espaços).</p>
+		<table class="no-border">
+		<tr>
+			<td>1</td>
+			<td>pierwszy</td>
+			<td>11</td>
+			<td>jedenasty</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>drugi</td>
+			<td>20</td>
+			<td>dwudziesty</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>trzeci</td>
+			<td>30</td>
+			<td>trzydziesty</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>czwarty</td>
+			<td>40</td>
+			<td>czterdziesty</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>piąty</td>
+			<td>50</td>
+			<td>pięćdziesiąty</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>szósty</td>
+			<td>60</td>
+			<td>sześćdziesiąty</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>siódemy</td>
+			<td>70</td>
+			<td>siedemdziesiąty</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>ósmy</td>
+			<td>80</td>
+			<td>osiemdziesiąty</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>dziewiąty</td>
+			<td>90</td>
+			<td>dziewięćdziesiąty</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>dziesiąty</td>
+			<td>100</td>
+			<td>setny</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>dwunasty</td>
+			<td>200</td>
+			<td>dwusetny</td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td>trzynasty</td>
+			<td>300</td>
+			<td>trzechsetny</td>
+		</tr>
+		<tr>
+			<td>14</td>
+			<td>czternasty</td>
+			<td>400</td>
+			<td>czterechsetny</td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td>piętnasty</td>
+			<td>500</td>
+			<td>pięćsetny</td>
+		</tr>
+		<tr>
+			<td>16</td>
+			<td>szesnasty</td>
+			<td>600</td>
+			<td>sześćsetny</td>
+		</tr>
+		<tr>
+			<td>17</td>
+			<td>siedemnasty</td>
+			<td>700</td>
+			<td>siedemsetny</td>
+		</tr>
+		<tr>
+			<td>18</td>
+			<td>osiemnasty</td>
+			<td>800</td>
+			<td>osiemsetny</td>
+		</tr>
+		<tr>
+			<td>19</td>
+			<td>dwiewiętnasty</td>
+			<td>900</td>
+			<td>dwiewięćsetny</td>
+		</tr>
+		<tr>
+			<td>1.000</td>
+			<td>tysięczny</td>
+			<td>1.000.000</td>
+			<td>milionowy</td>
+		</tr>
+		<tr>
+			<td>1.000.000.000</td>
+			<td>miliardowy</td>
+			<td>1.000.000.000.000</td>
+			<td>bilionowy</td>
+		</tr>
+		</table>
+
+		<h2 id="substantivos-numeros">Substantivos de Números</h2>
+		<p>São substantivos femininos, terminados em -ka e formados pelos números <em>ordinais</em>.
+		Podem se referir a objetos numerados: ônibus, chaves, salas, cartas, números de loteria,
+		notas de dinheiro, tamanhos de roupas, grupos de pessoas ou itens e idades.
+		Só há de 0 a 12 e as dezenas até 100.</p>
+		<table class="no-border">
+		<tr>
+			<td>0</td>
+			<td>zerówka</td>
+			<td>1</td>
+			<td>jedynka</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>dwójka</td>
+			<td>20</td>
+			<td>dwudziestka</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>trójka</td>
+			<td>30</td>
+			<td>trzydziestka</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>czwórka</td>
+			<td>40</td>
+			<td>czterdziestka</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>piątka</td>
+			<td>50</td>
+			<td>pięćdziesiątka</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>szóstka</td>
+			<td>60</td>
+			<td>sześćdziesiątka</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>siódemka</td>
+			<td>70</td>
+			<td>siedemdziesiątka</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>ósemka</td>
+			<td>80</td>
+			<td>osiemdziesiątka</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>dziewiątka</td>
+			<td>90</td>
+			<td>dziewięćdziesiątka</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>dziesiątka</td>
+			<td>100</td>
+			<td>setka<br>(coloquial: stówka)</td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>jedenastka</td>
+			<td>12</td>
+			<td>dwunastka</td>
+		</tr>
+		</table>
+		</div>
+		</article>
+
+		<h1 id="formas">Formas Alternativas</h1>
+		<article>
+		<div>
+		<h2>Adjetivos</h2>
+		<p>Possuem algumas formas:</p>
+		<table>
+			<tr> <th>Forma</th> <th>Prefixo</th> <th>Final</th> </tr>
+			<tr> <th>Padrão</th> <td>Ø-</td> <td>Variável, ver tabelas de declinação</td></tr>
+			<tr> <th>Negativa</th> <td>nie-</td> <td>Variável, ver tabelas de declinação</td> </tr>
+			<tr> <th>Comparativa</th> <td>Ø-</td> <td>-sz-/-iejsz-</td> </tr>
+			<tr> <th>Superlativa</th> <td>naj-</td> <td>-sz/-iejsz-</td> </tr>
+		</table>
+		<h3>Superlativo e Comparativo: Adjetivos Compridos e Negativos</h3>
+		<table class="no-border">
+		<tr> <th colspan="3">Comparativo</th> </tr>
+		<tr>
+			<td><strong>bardziej</strong> (mais) ou<br><strong>mniej</strong> (menos)</td>
+			<td>+</td>
+			<td>forma padrão do adjetivo</td>
+		</tr>
+		</table>
+		<table class="no-border">
+		<tr> <th colspan="3">Superlativo</th> </tr>
+		<tr>
+			<td><strong>najbardziej</strong> (o mais) ou<br><strong>najmniej</strong> (o menos)</td>
+			<td>+</td>
+			<td>forma padrão do adjetivo</td>
+		</tr>
+		</table>
+
+		<h2 id="adverbios">Advérbios de Modo</h2>
+		<p>Formados a partir de um adjetivo base:</p>
+		<table>
+			<tr> <th>Forma</th> <th>Prefixo</th> <th>Final</th> </tr>
+			<tr> <th>Padrão</th> <td>Ø-</td> <td>-o/-ie</td> </tr>
+			<tr> <th>Negativa</th> <td>nie-</td> <td>-o/-ie</td> </tr>
+			<tr> <th>Comparativa</th> <td>Ø-</td> <td>-ej/-iej</td> </tr>
+			<tr> <th>Superlativa</th> <td>naj-</td> <td>-ej/-iej</td> </tr>
+		</table>
+		<h3>Superlativo e Comparativo: Advérbios Compridos e Negativos</h3>
+		<table class="no-border">
+		<tr> <th colspan="3">Comparativo</th> </tr>
+		<tr>
+			<td><strong>bardziej</strong> (mais) ou<br><strong>mniej</strong> (menos)</td>
+			<td>+</td>
+			<td>forma padrão do advérbio</td>
+		</tr>
+		</table>
+		<table class="no-border">
+		<tr> <th colspan="3">Superlativo</th> </tr>
+		<tr>
+			<td><strong>najbardziej</strong> (o mais) ou<br><strong>najmniej</strong> (o menos)</td>
+			<td>+</td>
+			<td>forma padrão do advérbio</td>
+		</tr>
+		</table>
+		</div>
+		</article>
+
+		<h1 id="expressoes">Expressões Diversas</h1>
+		<article>
+		<div>
+		<h2>Comparativas</h2>
+		<p>Válidas tanto para adjetivos comparativos como para advérbios comparativos.</p>
+		<table class="no-border">
+		<tr>
+			<td rowspan="2">adjetivo ou advérbio<br>comparativo</td>
+			<td>+</td>
+			<td><strong>niż</strong> (que)</td>
+			<td>+</td>
+			<td>substantivo ou pronome<br> no caso <em>nominativo</em></td>
+			<td rowspan="2">=</td>
+			<td rowspan="2">"...-or que ..."</td>
+		</tr>
+		<tr>
+			<td>+</td>
+			<td><strong>od</strong> (de)</td>
+			<td>+</td>
+			<td>substantivo ou pronome<br> no caso <em>genitivo</em></td>
+		</tr>
+		</table>
+		<ul>
+			<li><strong>niż</strong> é necessário se não for <em>diretamente</em> seguido por substantivo ou pronome;</li>
+			<li><strong>od(e)</strong> vira <strong>ode</strong> antes de <strong>mnie</strong>.</li>
+		</ul>
+		<table class="no-border">
+		<tr>
+			<td><strong>coraz</strong></td>
+			<td>+</td>
+			<td>adjetivo ou advérbio<br>comparativo</td>
+			<td>=</td>
+			<td>"mais e mais...",<br>"cada vez mais..."</td>
+		</tr>
+		</table>
+		<table class="no-border">
+		<tr>
+			<td><strong>o wiele</strong></td>
+			<td>+</td>
+			<td>adjetivo ou advérbio<br>comparativo</td>
+			<td>+</td>
+			<td>expressão <em>opcional</em> com <br><strong>niż</strong> ou <strong>od(e)</strong> (ver acima)</td>
+			<td>=</td>
+			<td>"muito ...-or (que ...)"</td>
+		</tr>
+		</table>
+		<table class="no-border">
+		<tr>
+			<td><strong>im</strong></td>
+			<td>+</td>
+			<td>adjetivo ou advérbio<br>comparativo</td>
+			<td>+</td>
+			<td><strong>tym</strong></td>
+			<td>+</td>
+			<td>adjetivo ou advérbio<br>comparativo</td>
+			<td>=</td>
+			<td>"quanto mais...,<br>mais..."</td>
+		</tr>
+		</table>
+		<h2 id="superlativas">Superlativas</h2>
+		<p>Válidas tanto para adjetivos comparativos como para advérbios comparativos.</p>
+		<table class="no-border">
+		<tr>
+			<td rowspan="2">adjetivo ou advérbio<br>superlativo</td>
+			<td>+</td>
+			<td><strong>z(e)</strong></td>
+			<td>+</td>
+			<td>substantivo ou pronome<br>no caso <em>genitivo plural</em></td>
+			<td>=</td>
+			<td>"o ...-or de..."</td>
+		</tr>
+		<tr>
+			<td>+</td>
+			<td><strong>jaki</strong><br>(adjetivo)</td>
+			<td>+</td>
+			<td>verbo e objeto</td>
+			<td>=</td>
+			<td>"o ...-or que..."</td>
+		</tr>
+		</table>
+		<table class="no-border">
+		<tr>
+			<td>jak</td>
+			<td>+</td>
+			<td>adjetivo ou advérbio<br>superlativo</td>
+			<td>=</td>
+			<td>"o ...-or possível"</td>
+		</tr>
+		</table>
+		</div>
+		</article>
+	</main>
+	<script>
+		function makeLi(href, title) {
+			var li = document.createElement("li");
+			var liAnchor = document.createElement("a");
+			var liTitle = document.createTextNode(title);
+			liAnchor.setAttribute("href", href);
+			liAnchor.appendChild(liTitle);
+			li.appendChild(liAnchor);
+			return li;
+		}
+		
+		var articles = document.getElementsByTagName("article");
+		var headers = document.getElementsByTagName("h1");
+		var sumario = document.getElementById("sumario");
+		for(var i = 0; i < articles.length; i++) {
+			var subsections = articles[i].getElementsByTagName("h2");
+			console.log(subsections);
+			var ulSubsections = document.createElement("ul");
+
+			var liHref = "#" + headers[i+2].id;
+			sumario.appendChild(makeLi(liHref, headers[i+2].innerHTML));
+			
+			ulSubsections.appendChild(makeLi(liHref, subsections[0].innerHTML));
+
+			for (var j = 1; j < subsections.length; j++) {
+				ulSubsections.appendChild(makeLi("#" + subsections[j].id, subsections[j].innerHTML));
+			}
+
+			sumario.appendChild(ulSubsections);
+		}
+	</script>
 	</body>
 </html>
