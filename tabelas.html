@@ -115,6 +115,14 @@ table, th, td {
 	border: none;
 }
 
+.no-border {
+	margin-bottom: 0px;
+}
+
+.no-border:nth-child(n+1) {
+	margin-top: 0px;
+}
+
 .strong {
 	font-weight: bold;
 }
@@ -160,9 +168,9 @@ p {
 	<main>
 		<header class="hide-print"> <h1>Gramática Polonês - Referência</h1> </header>
 		<p class="hide-print">Use esta página como referência da gramática polonesa.</p>
+		<a class="hide-print" href="./tabelas.pdf"><span id="download">&darr; PDF</span></a>
 		<h1 class="hide-print">Sumário</h1>
 		<div class="hide-print">
-		<a href="./tabelas.pdf"><span id="download">&darr; PDF</span></a>
 		<ul id="sumario"> </ul>
 		</div>
 
@@ -216,7 +224,7 @@ p {
 		são substantivos.</p>
 		<p>A seguir, são listados os casos e seus principais usos.</p>
 
-		<h2>Nominativo</h2>
+		<h2 id="caso-nominativo">Nominativo</h2>
 		<p>Nominativo singular (masculino) é forma de dicionário (<em>lemma</em>), também usada como base das declinações.</p>
 		<h3>Sujeito</h3>
 		<p>Quem executa a ação.</p>
@@ -227,7 +235,7 @@ p {
 			<li><em><strong>A casa</strong> é <strong>grande</strong>.</em></li>
 		</ul>
 
-		<h2>Acusativo</h2>
+		<h2 id="caso-acusativo">Acusativo</h2>
 		<h3>Objeto Direto Positivo</h3>
 		<p>Quem recebe a ação (positiva) diretamente.</p>
 		<ul>
@@ -246,7 +254,7 @@ p {
 		</div>
 
 		<div>
-		<h2>Genitivo</h2>
+		<h2 id="caso-genitivo">Genitivo</h2>
 		<h3>Objeto Direto Negativo</h3>
 		<p>Quem recebe a ação (negativa) diretamente.</p>
 		<ul>
@@ -280,7 +288,7 @@ p {
 		</div>
 
 		<div>
-		<h2>Dativo</h2>
+		<h2 id="caso-dativo">Dativo</h2>
 		<h3>Objeto Indireto</h3>
 		<p>Quem recebe a ação diretamente. Normalmente quem recebe algo de presente ou pagamento.</p>
 		<ul>
@@ -290,7 +298,7 @@ p {
 			<li><em>Compro <strong>a ele</strong> um presente.</em></li>
 		</ul>
 
-		<h2>Instrumental</h2>
+		<h2 id="caso-instrumental">Instrumental</h2>
 		<h3>Instrumento da Ação</h3>
 		<p>Meios pelos quais a ação é realizada.</p>
 		<ul>
@@ -318,7 +326,7 @@ p {
 		</div>
 
 		<div>
-		<h2>Locativo</h2>
+		<h2 id="caso-locativo">Locativo</h2>
 		<h3>Preposições</h3>
 		<p>A maioria indica posição estática.</p>
 		<ul>
@@ -328,7 +336,7 @@ p {
 			<li>Isto está <span class="u">ao lado da</span> <strong>mesa</strong>;</li>
 		</ul>
 
-		<h2>Vocativo</h2>
+		<h2 id="caso-vocativo">Vocativo</h2>
 		<h3>Chamar Atenção</h3>
 		<p>Serve para chamar pessoas e possivelmente animais.</p>
 		<ul>
@@ -373,9 +381,7 @@ p {
 			<tr> <td>Outros</td> <td>-i</td> </tr>
 			<tr> <td>Outros</td> <td>-</td> <td>-e</td> </tr>
 		</table>
-		</div>
 
-		<div>
 		<h2 id="acusativo">Acusativo</h2>
 		<table>
 			<tr> <th colspan="4">Substantivos</th> </tr>
@@ -388,6 +394,9 @@ p {
 			<tr> <td>Consoante fortificada</td> <td>-y</td> </tr>
 			<tr> <td>Consoante fraca</td> <td>-i</td> </tr>
 		</table>
+		</div>
+
+		<div>
 		<table>
 			<tr> <th colspan="3">Adjetivos</th> </tr>
 			<tr> <th rowspan="3">Singular</th> <th>Gênero</th> <th>Final</th> </tr>
@@ -397,9 +406,7 @@ p {
 			<tr> <td>Masculino homem</td> <td>-ych</td> </tr>
 		</table>
 		<p class="obs"><strong>Observação:</strong> aqueles que não possuem entrada nas tabelas são iguais ao caso nominativo.</p>
-		</div>
 
-		<div>
 		<h2 id="genitivo">Genitivo</h2>
 		<table>
 			<tr> <th colspan="4">Substantivos</th> </tr>
@@ -454,9 +461,7 @@ p {
 			<tr> <th rowspan="2">Plural</th> <th>Gênero</th> <th>Final</th> </tr>
 			<tr> <td>Todos</td> <td>-ym</td> </tr>
 		</table>
-		</div>
 
-		<div>
 		<h2 id="instrumental">Instrumental</h2>
 		<table>
 			<tr> <th colspan="3">Substantivos</th> </tr>
@@ -501,9 +506,7 @@ p {
 			<tr> <th rowspan="2">Plural</th> <th>Gênero</th> <th>Final</th> </tr>
 			<tr> <td>Todos</td> <td>-ych</td> </tr>
 		</table>
-		</div>
-		
-		<div>
+
 		<h2 id="vocativo">Vocativo</h2>
 		<table>
 			<tr> <th colspan="4">Substantivos</th> </tr>
@@ -577,9 +580,6 @@ p {
 		</tr>
 		</table>
 		
-		</div>
-
-		<div>
 		<h2 id="neutros">Declinação de Substantivos Neutros em -ę, -ię</h2>
 		<table>
 			<tr> <th rowspan="2">Caso</th> <th colspan="2">-ę</th> <th colspan="2">-ię</th> </tr>
@@ -895,10 +895,6 @@ p {
 		</tr>
 		<tr> <th>Instrumental</th> </tr>
 		</table>
-
-		</div>
-
-		<div>
 		<h2 id="interrogativos-adjetivos">Interrogativos Como Adjetivos</h2>
 		
 		<table>
@@ -952,9 +948,9 @@ p {
 			<td colspan="2">jakimi</td>
 		</tr>
 		</table>
+		</div>
 
-		
-
+		<div>
 		<table>
 		<tr> <th colspan="7">Który - Qual</th> </tr>
 		<tr>
@@ -1007,8 +1003,6 @@ p {
 		</tr>
 		</table>
 
-		
-
 		<table>
 		<tr> <th colspan="7">Czyj - De Quem</th> </tr>
 		<tr>
@@ -1060,9 +1054,7 @@ p {
 			<td colspan="2">czyimi</td>
 		</tr>
 		</table>
-		</div>
 
-		<div>
 		<table>
 		<tr> <th colspan="7">Czyjś - De Alguém</th> </tr>
 		<tr>
@@ -1274,9 +1266,7 @@ p {
 			<td colspan="2">tamtymi</td>
 		</tr>
 		</table>
-		</div>
-		
-		<div>
+
 		<h2 id="possessivos">Pronomes Possessivos</h2>
 		<p>São adjetivos e declinam como tais.</p>
 		<h3>1ª Pessoa</h3>
@@ -1331,7 +1321,9 @@ p {
 			<td colspan="2">moimi</td>
 		</tr>
 		</table>
-
+		</div>
+		
+		<div>
 		<table>
 		<tr> <th colspan="7">Mój (Curto) - Meu</th> </tr>
 		<tr>
@@ -1435,9 +1427,6 @@ p {
 			<td colspan="2">naszymi</td>
 		</tr>
 		</table>
-		</div>
-
-		<div>
 		<h3>2ª Pessoa</h3>
 		<table>
 		<tr> <th colspan="7">Twój - Teu</th> </tr>
@@ -1543,8 +1532,9 @@ p {
 			<td colspan="2">twymi</td>
 		</tr>
 		</table>
+		</div>
 
-
+		<div>
 		<table>
 		<tr> <th colspan="7">Wasz - Nosso</th> </tr>
 		<tr>
@@ -1596,9 +1586,7 @@ p {
 			<td colspan="2">waszymi</td>
 		</tr>
 		</table>
-		</div>
 
-		<div>
 		<h3>3ª Pessoa</h3>
 		Pronome pessoal enfático no caso genitivo.
 		<ul>
@@ -1608,9 +1596,6 @@ p {
 		</ul>
 
 		<h3>Impessoal</h3>
-
-
-
 		<table>
 		<tr> <th colspan="7">Swój - Seu Próprio</th> </tr>
 		<tr>
@@ -1812,11 +1797,12 @@ p {
 			<tr> <td>3ª</td> <td>-e</td> <td>-eją</td> </tr>
 		</table>
 		<h3>Mudanças de Radicais</h3>
+		<p>O radical da 3ªP.P. é sempre o mesmo da 1ªP.S.; ex.: iść: idę &rarr; idą (outras formas: idzie-);</p>
 		<ul>
 			<li>-ować &rarr; -uj (Grupo I);</li>
 			<li>-awać &rarr; -aj (Grupo I);</li>
+			<li>-nąć &rarr; -n (1ªP) e -ni (2ªP) (Grupo I)</li>
 			<li>Radicais curtos normalmente adicionam -j, e entram no Grupo I;</li>
-			<li>O radical da 3ªP.P. é sempre o mesmo da 1ªP.S.; ex.: iść: idę &rarr; idą (outras formas: idzie-);</li>
 			<li>Outros radicais, como os em -ść e -źć, normalmente mudam irregularmente.</li>
 		</ul>
 		</div>
@@ -2027,9 +2013,7 @@ p {
 			<li>Patrzę, jak ona gotuje <strong>(CORRETO);</strong></li>
 			<li><em>Olho como ela cozinha (tradução literal, mas o significado é o mesmo da última tradução).</em></li>
 		</ul>
-		</div>
 
-		<div>
 		<h2 id="participio-adverbial-passado">Particípio Adverbial - Passado</h2>
 		<p>Apenas verbos perfectivos possuem esta forma. Para formar o pretérito do particípio adverbial, remove-se -łem da 1ªP.S.M. do passado e adiciona-se -wszy depois de uma vogal ou -łszy depois de uma consoante.</p>
 		<h3>Uso</h3>
@@ -2060,9 +2044,7 @@ p {
 			<li>Widzę pana, <strong>który</strong> buduje dom;</li>
 			<li>Vejo um senhor, <strong>o qual</strong> constrói uma casa.</li>
 		</ul>
-		</div>
 
-		<div>
 		<h2 id="participio-adjetival-passivo">Particípio Adjetival - Passivo</h2>
 		<h3>Uso</h3>
 		<p>Esta forma é um adjetivo, e pode ser usada como tal. Um dos usos mais úteis é para a voz passiva (quando o sujeito sofre a ação). Exemplo:</p>
@@ -2074,19 +2056,18 @@ p {
 		</ul>
 		<h3>Formação</h3>
 		<table>
-			<tr><th rowspan="2">Quando</th><th rowspan="2">Remover</th><th colspan="2">Adicionar</th></tr>
-			<tr><th><em>On</em></th><th><em>Oni</em></th></tr>
-			<tr><td>-ać, -eć, -ieć</td><td>-ć/-eć</td><td>-any</td><td>-ani</td></tr>
-			<tr><td>-ić, -yć, -uć (-j no radical)</td><td>-ć</td><td>-ity</td><td>-ici</td></tr>
-			<tr><td>-ić, -yć</td><td>-ć/-yć</td><td>-ony</td><td>-eni</td></tr>
-			<tr><td>-ść (-d no radical)</td><td>-ść</td><td>-dziony</td><td>-dzeni</td></tr>
-			<tr><td>-ść (-t no radical)</td><td>-ść</td><td>-ciony</td><td>-ceni</td></tr>
-			<tr><td>-źć</td><td>-źć</td><td>-ziony</td><td>-zieni</td></tr>
-			<tr><td>-ąć</td><td>-ąć</td><td>-ęty</td><td>-ęci</td></tr>
-			<tr><td>-nąć</td><td>-nąć</td><td>-ięty</td><td>-ięci</td></tr>
+			<tr><th>Quando</th><th>Remover</th><th>Adicionar</th></tr>
+			<tr><td>-ać, -eć, -ieć</td><td>-ć/-eć</td><td>-any</td></tr>
+			<tr><td>-ić, -yć, -uć (-j no radical)</td><td>-ć</td><td>-ity</td></tr>
+			<tr><td>-ić, -yć</td><td>-ć/-yć</td><td>-ony</td></tr>
+			<tr><td>-ść (-d no radical)</td><td>-ść</td><td>-dziony</td></tr>
+			<tr><td>-ść (-t no radical)</td><td>-ść</td><td>-ciony</td></tr>
+			<tr><td>-źć</td><td>-źć</td><td>-ziony</td></tr>
+			<tr><td>-ąć</td><td>-ąć</td><td>-ęty</td></tr>
+			<tr><td>-nąć</td><td>-nąć</td><td>-ięty</td></tr>
 		</table>
 		<h3>Voz Passiva: Perfectivos</h3>
-		<p>Intuitivamente, usaria-se o verbo być. Porém, verbos perfectivos requerem <strong>zostać (perf., zostanę, zostaniesz)</strong> para a voz passiva.</p>
+		<p>Verbos perfectivos requerem <strong>zostać (perf., zostanę, zostaniesz)</strong> para a voz passiva.</p>
 		<h3>Voz Passiva: Agente</h3>
 		<p>Para sinalizar o agente da ação, usa-se a preposição <strong>przez</strong> seguida pelo caso acusativo.</p>
 		<h3>Voz Passiva: Agente Não-Específico</h3>
@@ -2816,11 +2797,964 @@ p {
 		</table>
 		<table class="no-border">
 		<tr>
-			<td>jak</td>
+			<td><strong>jak</strong></td>
 			<td>+</td>
 			<td>adjetivo ou advérbio<br>superlativo</td>
 			<td>=</td>
 			<td>"o ...-or possível"</td>
+		</tr>
+		</table>
+
+		<h2 id="ha-nao-ha">Há/Não Há</h2>
+		<table class="no-border">
+		<tr>
+			<td><strong>w</strong></td>
+			<td>+</td>
+			<td>lugar (locativo)</td>
+			<td>+</td>
+			<td><strong>jest/są</strong></td>
+			<td>+</td>
+			<td>o quê</td>
+			<td>=</td>
+			<td>"em/no... há..."</td>
+		</tr>
+		</table>
+		<table class="no-border">
+		<tr>
+			<td><strong>u</strong></td>
+			<td>+</td>
+			<td>lugar (genitivo)</td>
+			<td>+</td>
+			<td><strong>jest/są</strong></td>
+			<td>+</td>
+			<td>o quê</td>
+			<td>=</td>
+			<td>"na casa do... há..."</td>
+		</tr>
+		</table>
+		<table class="no-border">
+		<tr>
+			<td><strong>w</strong></td>
+			<td>+</td>
+			<td>lugar (locativo)</td>
+			<td>+</td>
+			<td><strong>nie ma</strong></td>
+			<td>+</td>
+			<td>o quê (genitivo)</td>
+			<td>=</td>
+			<td>"em/no... não há..."</td>
+		</tr>
+		</table>
+		<table class="no-border">
+		<tr>
+			<td><strong>u</strong></td>
+			<td>+</td>
+			<td>lugar (genitivo)</td>
+			<td>+</td>
+			<td><strong>nie ma</strong></td>
+			<td>+</td>
+			<td>o quê (genitivo)</td>
+			<td>=</td>
+			<td>"na casa do... não há..."</td>
+		</tr>
+		</table>
+		</div>
+
+		<div>
+		<h2 id="tempo">Temporais</h2>
+		<table class="no-border">
+		<tr>
+			<td><strong>o</strong></td>
+			<td>+</td>
+			<td>hora (ordinal, locativo)</td>
+			<td>=</td>
+			<td>"às..."</td>
+		</tr>
+		</table>
+		<table class="no-border">
+		<tr>
+			<td>minutos (ordinal)</td>
+			<td>+</td>
+			<td><strong>po</strong></td>
+			<td>+</td>
+			<td>hora (ordinal, locativo)</td>
+			<td>=</td>
+			<td>"passado... das..."</td>
+		</tr>
+		<tr>
+			<td><strong>za</strong></td>
+			<td>+</td>
+			<td>minutos (ordinal, acusativo)</td>
+			<td>+</td>
+			<td>hora (ordinal)</td>
+			<td>=</td>
+			<td>"... pras..."</td>
+		</tr>
+		</table>
+		<table class="no-border">
+		<tr>
+			<td><strong>po</strong></td>
+			<td>+</td>
+			<td>tempo (locativo)</td>
+			<td>=</td>
+			<td>"depois das..."</td>
+		</tr>
+		<tr>
+			<td><strong>za</strong></td>
+			<td>+</td>
+			<td>tempo (acusativo)</td>
+			<td>=</td>
+			<td>"em..."</td>
+		</tr>
+		<tr>
+			<td><strong>na</strong></td>
+			<td>+</td>
+			<td>tempo (acusativo)</td>
+			<td>=</td>
+			<td>"por..."</td>
+		</tr>
+		<tr>
+			<td><strong>od</strong></td>
+			<td>+</td>
+			<td>tempo (genitivo)</td>
+			<td>=</td>
+			<td>"desde..."</td>
+		</tr>
+		<tr>
+			<td><strong>do</strong></td>
+			<td>+</td>
+			<td>tempo (genitivo)</td>
+			<td>=</td>
+			<td>"até..."</td>
+		</tr>
+		<tr>
+			<td><strong>około</strong></td>
+			<td>+</td>
+			<td>tempo (genitivo)</td>
+			<td>=</td>
+			<td>"por volta das..."</td>
+		</tr>
+		<tr>
+			<td><strong>przed</strong></td>
+			<td>+</td>
+			<td>tempo (instrumental)</td>
+			<td>=</td>
+			<td>"antes das..."</td>
+		</tr>
+		</table>
+		<table class="no-border">
+		<tr>
+			<td><strong>między</strong></td>
+			<td>+</td>
+			<td>tempo (instrumental)</td>
+			<td>+</td>
+			<td><strong>a</strong></td>
+			<td>+</td>
+			<td>tempo (instrumental)</td>
+			<td>=</td>
+			<td>"entre... e..."</td>
+		</tr>
+		</table>
+		<table class="no-border">
+		<tr>
+			<td><strong>co</strong></td>
+			<td>+</td>
+			<td>evento (nominativo)</td>
+			<td>=</td>
+			<td>"a cada..."</td>
+		</tr>
+		<tr>
+			<td><strong>raz na</strong></td>
+			<td>+</td>
+			<td>evento (acusativo)</td>
+			<td>=</td>
+			<td>"uma vez a cada..."</td>
+		</tr>
+		</table>
+
+		<h2 id="afirmacoes-negativas">Afirmações Negativas</h2>
+		<table class="no-border">
+		<tr>
+			<td>pronome/advérbio negativo</td>
+			<td>+</td>
+			<td><strong>nie</strong></td>
+			<td>+</td>
+			<td>verbo e objeto</td>
+			<td>=</td>
+			<td>afirmação negativa (duplo "não")</td>
+		</tr>
+		</table>
+		</div>
+		</article>
+
+		<h1 id="glossario">Glossário: Termos Comuns</h1>
+		<article>
+		<div>
+		<h2>Conjunções</h2>
+		<table>
+		<tr>
+			<th>Conjunção</th>
+			<th>Significado</th>
+		</tr>
+		<tr>
+			<td>i/oraz</td>
+			<td>e</td>
+		</tr>
+		<tr>
+			<td>, a</td>
+			<td>e (constraste)/mas</td>
+		</tr>
+		<tr>
+			<td>oraz</td>
+			<td>ao mesmo tempo</td>
+		</tr>
+		<tr>
+			<td>i..., i...</td>
+			<td>tanto..., quanto...</td>
+		</tr>
+		<tr>
+			<td>albo..., albo...</td>
+			<td>ou..., ou...</td>
+		</tr>
+		<tr>
+			<td>ani..., ani nie...</td>
+			<td>nem..., nem...</td>
+		</tr>
+		<tr>
+			<td>albo/lub, czy (perguntas)</td>
+			<td>ou</td>
+		</tr>
+		<tr>
+			<td>, ale</td>
+			<td>mas</td>
+		</tr>
+		<tr>
+			<td>bo</td>
+			<td>pois</td>
+		</tr>
+		<tr>
+			<td>chociaż</td>
+			<td>apesar</td>
+		</tr>
+		<tr>
+			<td>że</td>
+			<td>que</td>
+		</tr>
+		<tr>
+			<td>dlatego/więc/to</td>
+			<td>portanto</td>
+		</tr>
+		<tr>
+			<td>zamiast</td>
+			<td>ao invés</td>
+		</tr>
+		<tr>
+			<td>niż</td>
+			<td>que (comparativo)</td>
+		</tr>
+		<tr>
+			<td>skoro/ponieważ</td>
+			<td>já que, como</td>
+		</tr>
+		<tr>
+			<td>tylko</td>
+			<td>apenas</td>
+		</tr>
+		<tr>
+			<td>jeśli/jeżeli</td>
+			<td>se</td>
+		</tr>
+		<tr>
+			<td>jak</td>
+			<td>como</td>
+		</tr>
+		<tr>
+			<td>gdzie</td>
+			<td>onde</td>
+		</tr>
+		<tr>
+			<td>bo inaczej</td>
+			<td>caso contrário</td>
+		</tr>
+		<tr>
+			<td>zwłaszcza że</td>
+			<td>especialmente como</td>
+		</tr>
+		</table>
+
+		<h2 id="preposicoes-acusativo">Preposições - Acusativo</h2>
+		<table>
+		<tr>
+			<th>Preposição</th>
+			<th>Significado</th>
+		</tr>
+		<tr>
+			<td>przez</td>
+			<td>através</td>
+		</tr>
+		<tr>
+			<td>w</td>
+			<td>no(a) (dias da semana)</td>
+		</tr>
+		<tr>
+			<td>na</td>
+			<td>movimento para local aberto ou local fechado grande</td>
+		</tr>
+		<tr>
+			<td>na</td>
+			<td>"por" em <em>czekać na</em></td>
+		</tr>
+		<tr>
+			<td>za</td>
+			<td>"por" em <em>płacić za</em></td>
+		</tr>
+		<tr>
+			<td>o</td>
+			<td>"por" em <em>prosić o</em></td>
+		</tr>
+		<tr>
+			<td>po</td>
+			<td>por (para buscar)</td>
+		</tr>
+		</table>
+		</div>
+
+		<div>
+		<h2 id="preposicoes-dativo">Preposições - Dativo</h2>
+		<table>
+		<tr>
+			<th>Preposição</th>
+			<th>Significado</th>
+		</tr>
+		<tr>
+			<td>dzięki</td>
+			<td>graças a</td>
+		</tr>
+		<tr>
+			<td>przeciw(ko)</td>
+			<td>contra, em lado oposto</td>
+		</tr>
+		<tr>
+			<td>ku</td>
+			<td>em direção a</td>
+		</tr>
+		<tr>
+			<td>wbrew</td>
+			<td>contrário a</td>
+		</tr>
+		</table>
+
+		<h2 id="preposicoes-genitivo">Preposições - Genitivo</h2>
+		<table>
+		<tr>
+			<th>Preposição</th>
+			<th>Significado</th>
+		</tr>
+		<tr>
+			<td>blisko, koło</td>
+			<td>perto de</td>
+		</tr>
+		<tr>
+			<td>obok</td>
+			<td>ao lado de</td>
+		</tr>
+		<tr>
+			<td>daleko</td>
+			<td>longe de</td>
+		</tr>
+		<tr>
+			<td>niedaleko/w pobliżu</td>
+			<td>perto de</td>
+		</tr>
+		<tr>
+			<td>naprzeciw(ko)</td>
+			<td>oposto a</td>
+		</tr>
+		<tr>
+			<td>u</td>
+			<td>na casa/loja de</td>
+		</tr>
+		<tr>
+			<td>wśród</td>
+			<td>entre</td>
+		</tr>
+		<tr>
+			<td>wzdłuż</td>
+			<td>ao longo do comprimento de</td>
+		</tr>
+		<tr>
+			<td>dokoła, naokoło</td>
+			<td>ao redor de</td>
+		</tr>
+		<tr>
+			<td>do</td>
+			<td>movimento para local fechado</td>
+		</tr>
+		<tr>
+			<td>od</td>
+			<td>de</td>
+		</tr>
+		<tr>
+			<td>dla</td>
+			<td>por</td>
+		</tr>
+		<tr>
+			<td>z</td>
+			<td>saindo de, vindo de</td>
+		</tr>
+		<tr>
+			<td>bez</td>
+			<td>sem</td>
+		</tr>
+		<tr>
+			<td>mimo</td>
+			<td>apesar de</td>
+		</tr>
+		<tr>
+			<td>podczas</td>
+			<td>durante</td>
+		</tr>
+		<tr>
+			<td>w ciągu</td>
+			<td>no curso de</td>
+		</tr>
+		<tr>
+			<td>według</td>
+			<td>de acordo com</td>
+		</tr>
+		<tr>
+			<td>zamiast</td>
+			<td>ao invés de</td>
+		</tr>
+		<tr>
+			<td>(o)prócz</td>
+			<td>exceto</td>
+		</tr>
+		<tr>
+			<td>z powodu</td>
+			<td>por causa de</td>
+		</tr>
+		</table>
+
+		<h2 id="preposicoes-locativo">Preposições - Locativo</h2>
+		<table>
+		<tr>
+			<th>Conjunção</th>
+			<th>Significado</th>
+		</tr>
+		<tr>
+			<td>na</td>
+			<td>sobre, no(a) (ambos área aberta)</td>
+		</tr>
+		<tr>
+			<td>w</td>
+			<td>vestindo, no(a)/em (área fechada)</td>
+		</tr>
+		<tr>
+			<td>o</td>
+			<td>sobre (assunto), às (tempo)</td>
+		</tr>
+		<tr>
+			<td>przy</td>
+			<td>perto, enquanto fazendo</td>
+		</tr>
+		<tr>
+			<td>po</td>
+			<td>em idioma, depois (tempo), herdado de, ao longo de</td>
+		</tr>
+		</table>
+		</div>
+
+		<div>
+		<h2 id="preposicoes-instrumental">Preposições - Instrumental</h2>
+		<table>
+		<tr>
+			<th>Conjunção</th>
+			<th>Significado</th>
+		</tr>
+		<tr>
+			<td>pod</td>
+			<td>abaixo de</td>
+		</tr>
+		<tr>
+			<td>nad</td>
+			<td>acima de</td>
+		</tr>
+		<tr>
+			<td>między</td>
+			<td>entre, em meio a</td>
+		</tr>
+		<tr>
+			<td>z</td>
+			<td>com, com algum atributo</td>
+		</tr>
+		<tr>
+			<td>przed</td>
+			<td>em frente a</td>
+		</tr>
+		<tr>
+			<td>za</td>
+			<td>atrás</td>
+		</tr>
+		</table>
+
+		<h2 id="verbos-mudam-imperf">Verbos que mudam o radical - Imperfectivos</h2>
+		<table>
+		<tr>
+			<th rowspan="2">Verbo</th>
+			<th colspan="2">Presente</th>
+			<th colspan="2">Passado</th>
+			<th rowspan="2">Tradução</th>
+		</tr>
+		<tr>
+			<th>1ªP.S.</th>
+			<th>2ªP.S.</th>
+			<th>1ªP.M.S.</th>
+			<th>1ªP.F.S.</th>
+		</tr>
+		<tr>
+			<td>wieźć</td>
+			<td>wiozę</td>
+			<td>wieziesz</td>
+			<td>wiozłem</td>
+			<td>wiozłam</td>
+			<td>transportar (determinado)</td>
+		</tr>
+		<tr>
+			<td>wozić</td>
+			<td>wożę</td>
+			<td>wozisz</td>
+			<td>woziłem</td>
+			<td>woziłam</td>
+			<td>transportar (indeterminado)</td>
+		</tr>
+		<tr>
+			<td>jechać</td>
+			<td>jadę</td>
+			<td>jedziesz</td>
+			<td>jechałem</td>
+			<td>jechałam</td>
+			<td>ir de transporte (determinado)</td>
+		</tr>
+		<tr>
+			<td>jeździć</td>
+			<td>jeżdżę</td>
+			<td>jeździsz</td>
+			<td>jeździłem</td>
+			<td>jeździłam</td>
+			<td>ir de transporte (indeterminado)</td>
+		</tr>
+		<tr>
+			<td>iść</td>
+			<td>idę</td>
+			<td>idziesz</td>
+			<td>szedłem</td>
+			<td>szłam</td>
+			<td>ir à pé</td>
+		</tr>
+		<tr>
+			<td>brać</td>
+			<td>biorę</td>
+			<td>bierzesz</td>
+			<td>brałem</td>
+			<td>brałam</td>
+			<td>pegar</td>
+		</tr>
+		<tr>
+			<td>spać</td>
+			<td>śpię</td>
+			<td>śpiesz</td>
+			<td>spałem</td>
+			<td>spałam</td>
+			<td>dormir</td>
+		</tr>
+		<tr>
+			<td>prosić</td>
+			<td>proszę</td>
+			<td>prosisz</td>
+			<td>prosiłem</td>
+			<td>prosiłam</td>
+			<td>pedir</td>
+		</tr>
+		<tr>
+			<td>płakać</td>
+			<td>płaczę</td>
+			<td>płaczesz</td>
+			<td>płakałem</td>
+			<td>płakałam</td>
+			<td>chorar</td>
+		</tr>
+		<tr>
+			<td>wiązać</td>
+			<td>wiążę</td>
+			<td>wiążesz</td>
+			<td>wiązałem</td>
+			<td>wiązałam</td>
+			<td>amarrar</td>
+		</tr>
+		<tr>
+			<td>dygotać</td>
+			<td>dygoczę</td>
+			<td>dygoczesz</td>
+			<td>dygotałem</td>
+			<td>dygotałam</td>
+			<td>tremer</td>
+		</tr>
+		<tr>
+			<td>czyścić</td>
+			<td>czyszczę</td>
+			<td>czyścisz</td>
+			<td>czyściłem</td>
+			<td>czyściłam</td>
+			<td>limpar</td>
+		</tr>
+		<tr>
+			<td>łamać</td>
+			<td>łamię</td>
+			<td>łamiesz</td>
+			<td>łamałem</td>
+			<td>łamałam</td>
+			<td>quebrar</td>
+		</tr>
+		<tr>
+			<td>stać</td>
+			<td>stoję</td>
+			<td>stoi</td>
+			<td>stałem</td>
+			<td>stałam</td>
+			<td>estar de pé/parado</td>
+		</tr>
+		<tr>
+			<td>kroić</td>
+			<td>kroję</td>
+			<td>kroisz</td>
+			<td>kroiłem</td>
+			<td>kroiłam</td>
+			<td>cortar</td>
+		</tr>
+		<tr>
+			<td>kleić</td>
+			<td>kleję</td>
+			<td>kleisz</td>
+			<td>kleiłem</td>
+			<td>kleiłam</td>
+			<td>colar</td>
+		</tr>
+		<tr>
+			<td>lać</td>
+			<td>leję</td>
+			<td>lejesz</td>
+			<td>lałem</td>
+			<td>lałam</td>
+			<td>derramar</td>
+		</tr>
+		<tr>
+			<td>kuleć</td>
+			<td>kuleję</td>
+			<td>kulejesz</td>
+			<td>kulałem</td>
+			<td>kulałam</td>
+			<td>cortar grama</td>
+		</tr>
+		<tr>
+			<td>pić</td>
+			<td>piję</td>
+			<td>pijesz</td>
+			<td>piłem</td>
+			<td>piłam</td>
+			<td>beber</td>
+		</tr>
+		<tr>
+			<td>żyć</td>
+			<td>żyję</td>
+			<td>żyjez</td>
+			<td>żyłem</td>
+			<td>żyłam</td>
+			<td>viver</td>
+		</tr>
+		<tr>
+			<td>czuć</td>
+			<td>czuję</td>
+			<td>czujesz</td>
+			<td>czułem</td>
+			<td>czułam</td>
+			<td>sentir</td>
+		</tr>
+		<tr>
+			<td>nieść</td>
+			<td>niosę</td>
+			<td>niesiesz</td>
+			<td>niosłem</td>
+			<td>niosłam</td>
+			<td>carregar/vestir (determinado)</td>
+		</tr>
+		<tr>
+			<td>nosić</td>
+			<td>noszę</td>
+			<td>nosisz</td>
+			<td>nosiłem</td>
+			<td>nosiłam</td>
+			<td>carregar/vestir (indeterminado)</td>
+		</tr>
+		<tr>
+			<td>jeść</td>
+			<td>jem</td>
+			<td>jesz</td>
+			<td>jadłem</td>
+			<td>jadłam</td>
+			<td>comer</td>
+		</tr>
+		<tr>
+			<td>biegnąć</td>
+			<td>biegnę</td>
+			<td>biegniesz</td>
+			<td>biegłem</td>
+			<td>biegłam</td>
+			<td>correr (determinado)</td>
+		</tr>
+		<tr>
+			<td>kłaść</td>
+			<td>kładę</td>
+			<td>kładziesz</td>
+			<td>kładłem</td>
+			<td>kładłam</td>
+			<td>colocar</td>
+		</tr>
+		<tr>
+			<td>piec</td>
+			<td>piekę</td>
+			<td>pieczesz</td>
+			<td>piekłem</td>
+			<td>piekłam</td>
+			<td>assar</td>
+		</tr>
+		</table>
+		</div>
+
+		<div>
+		<h2 id="verbos-mudam-perf">Verbos que mudam o radical - Perfectivos</h2>
+		<table>
+		<tr>
+			<th rowspan="2">Verbo</th>
+			<th colspan="2">Futuro</th>
+			<th colspan="2">Passado</th>
+			<th rowspan="2">Tradução</th>
+		</tr>
+		<tr>
+			<th>1ªP.S.</th>
+			<th>2ªP.S.</th>
+			<th>1ªP.M.S.</th>
+			<th>1ªP.F.S.</th>
+		</tr>
+		<tr>
+			<td>wziąć</td>
+			<td>wezmę</td>
+			<td>weźmiesz</td>
+			<td>wziąłem</td>
+			<td>wzięłam</td>
+			<td>pegar</td>
+		</tr>
+		<tr>
+			<td>pomóc</td>
+			<td>pomogę</td>
+			<td>pomożesz</td>
+			<td>pomogłem</td>
+			<td>pomogłam</td>
+			<td>ajudar</td>
+		</tr>
+		<tr>
+			<td>położyć</td>
+			<td>położę</td>
+			<td>położysz</td>
+			<td>położyłem</td>
+			<td>położyłam</td>
+			<td>colocar</td>
+		</tr>
+		<tr>
+			<td>znaleźć</td>
+			<td>znajdę</td>
+			<td>znajdziesz</td>
+			<td>znalazłem</td>
+			<td>znalazłam</td>
+			<td>encontrar</td>
+		</tr>
+		<tr>
+			<td>usiąść</td>
+			<td>usiądę</td>
+			<td>usiądziesz</td>
+			<td>usiadłem</td>
+			<td>usiadłam</td>
+			<td>sentar-se</td>
+		</tr>
+		</table>
+
+		<h2 id="modais">Verbos Modais</h2>
+		<table>
+		<tr>
+			<th rowspan="2">Verbo</th>
+			<th colspan="2">Futuro</th>
+			<th colspan="2">Passado</th>
+			<th rowspan="2">Tradução</th>
+		</tr>
+		<tr>
+			<th>1ªP.S.</th>
+			<th>2ªP.S.</th>
+			<th>1ªP.M.S.</th>
+			<th>1ªP.F.S.</th>
+		</tr>
+		<tr>
+			<td>powinienem<br>(defectivo)</td>
+			<td>powinienem (masc.)<br>powinnam (fem.)</td>
+			<td>powinieneś (masc.)<br>powinnaś (fem.)</td>
+			<td>powinienem<br>był</td>
+			<td>powinnam<br>była</td>
+			<td>deveria</td>
+		</tr>
+		<tr>
+			<td>mieć</td>
+			<td>mam</td>
+			<td>masz</td>
+			<td>miałem</td>
+			<td>miałam</td>
+			<td>ter (que)</td>
+		</tr>
+		<tr>
+			<td>chcieć</td>
+			<td>chcę</td>
+			<td>chciesz</td>
+			<td>chciałem</td>
+			<td>chciałam</td>
+			<td>querer</td>
+		</tr>
+		<tr>
+			<td>woleć</td>
+			<td>wolę</td>
+			<td>wolisz</td>
+			<td>wolałem</td>
+			<td>wolałam</td>
+			<td>preferir</td>
+		</tr>
+		<tr>
+			<td>móc</td>
+			<td>mogę</td>
+			<td>możesz</td>
+			<td>mogłem</td>
+			<td>mogłam</td>
+			<td>poder</td>
+		</tr>
+		<tr>
+			<td>umieć</td>
+			<td>umiem</td>
+			<td>umiesz</td>
+			<td>umiałem</td>
+			<td>umiałam</td>
+			<td>saber como<br>(fazer)</td>
+		</tr>
+		<tr>
+			<td>potrafić</td>
+			<td>potrafię</td>
+			<td>potrafisz</td>
+			<td>protrafiłem</td>
+			<td>protrafiłam</td>
+			<td>ser capaz,<br>conseguir</td>
+		</tr>
+		</table>
+		<h2 id="isc-derivados">Iść/Chodzić - Derivados</h2>
+		<table>
+		<tr>
+			<th>Perfectivo</th>
+			<th>Imperfectivo</th>
+			<th>Significado</th>
+		</tr>
+		<tr>
+			<td>pójść</td>
+			<td>iść (determinado)<br>chodzić (indeterminado)</td>
+			<td>ir</td>
+		</tr>
+		<tr>
+			<td>wejść</td>
+			<td>wchodzić</td>
+			<td>entrar</td>
+		</tr>
+		<tr>
+			<td>wyjść</td>
+			<td>wychodzić</td>
+			<td>sair</td>
+		</tr>
+		<tr>
+			<td>dojść</td>
+			<td>dochodzić</td>
+			<td>alcançar</td>
+		</tr>
+		<tr>
+			<td>przyjść</td>
+			<td>przychodzić</td>
+			<td>vir</td>
+		</tr>
+		<tr>
+			<td>przejść</td>
+			<td>przechodzić</td>
+			<td>cruzar</td>
+		</tr>
+		<tr>
+			<td>podejść</td>
+			<td>podchodzić</td>
+			<td>aproximar-se</td>
+		</tr>
+		<tr>
+			<td>odejść</td>
+			<td>odchodzić</td>
+			<td>afastar-se</td>
+		</tr>
+		<tr>
+			<td>zejść</td>
+			<td>schodzić</td>
+			<td>descer</td>
+		</tr>
+		<tr>
+			<td>nadejść</td>
+			<td>nadchodzić</td>
+			<td>aproximar-se<strong>¹</strong></td>
+		</tr>
+		</table>
+		<p class="obs"><strong>¹</strong>aplica-se a meses, estações, celebrações, etc</p>
+		</div>
+
+		<div>
+		<h2 id="verbos-impessoais">Verbos Impessoais</h2>
+		<p>Passado: + było; futuro: + będzie</p>
+		<table>
+		<tr>
+			<th>Verbo</th>
+			<th>Significado</th>
+		</tr>
+		<tr>
+			<td>trzeba</td>
+			<td>necessidade ou dever</td>
+		</tr>
+		<tr>
+			<td>należy</td>
+			<td>obrigação moral, legal, social (formal)</td>
+		</tr>
+		<tr>
+			<td>można</td>
+			<td>permissão</td>
+		</tr>
+		<tr>
+			<td>wolno</td>
+			<td>permissão (formal)</td>
+		</tr>
+		<tr>
+			<td>szkoda</td>
+			<td>arrependimento ou algo que não vale a pena<br>(sujeito no dativo e objeto no genitivo)</td>
+		</tr>
+		<tr>
+			<td>warto</td>
+			<td>julgamento de valor</td>
+		</tr>
+		<tr>
+			<td>wypada</td>
+			<td>convenção social</td>
 		</tr>
 		</table>
 		</div>
