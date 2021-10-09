@@ -1,7 +1,6 @@
-main:
-	wkhtmltopdf \
-	-T 0.7in -B 0.7in -L 0.7in -R 0.7in --print-media-type \
-	cover cover.html \
-	toc --toc-header-text 'Sumário' \
-	page tabelas.html --footer-center '[page]' --no-background -n \
-	tabelas.pdf
+tabela:
+	wkhtmltopdf --print-media-type --footer-center "[page]" --page-offset -1 \
+		-B 1.3cm -L 2cm -T 2cm -R 2cm \
+		cover cover.html \
+		toc --toc-header-text Sumário \
+		page tabelas.html tabelas.pdf
