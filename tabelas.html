@@ -12,6 +12,10 @@ h2 {
 	margin-top: 2em;
 }
 
+section h1 {
+	font-size: 1.8em;
+}
+
 header h1 {
 	text-align: center;
 	color: white;
@@ -213,8 +217,8 @@ p {
 		<ul id="sumario"> </ul>
 		</div>
 
+		<section>
 		<h1 id="regras">Regras Gerais</h1>
-		<article>
 		<div>
 		<h2>Classificação das Consoantes</h2>
 		<ul>
@@ -252,10 +256,10 @@ p {
 			<li>Um <strong>ą</strong> pode virar <strong>ę</strong>.</li>
 		</ul>
 		</div>
-		</article>
+		</section>
 
+		<section>
 		<h1 id="casos">Casos Gramaticais</h1>
-		<article>
 		<div>
 		<h2>O Que São</h2>
 		<p>Diferentemente do Português, o Polonês possui casos gramaticais. Dependendo da função do substantivo numa frase,
@@ -389,10 +393,10 @@ p {
 			<li><em><strong>Senhor</strong>, preste atenção.</em></li>
 		</ul>
 		</div>
-		</article>
+		</section>
 
+		<section>
 		<h1 id="declinacoes">Declinações de Substantivos e Adjetivos</h1>
-		<article>
 		<div>
 		<h2>Nominativo</h2>
 		<div class="overflow-table">
@@ -667,10 +671,10 @@ p {
 		</div>
 		<p class="obs"><strong>Observação:</strong> Alguns em -ię declinam como -ę.</p>
 		</div>
-		</article>
+		</section>
 
+		<section>
 		<h1 id="pronomes">Declinações de Pronomes</h1>
-		<article>
 		<div>
 		<h2>Pronomes Pessoais</h2>
 		<div class="overflow-table">
@@ -1871,10 +1875,10 @@ p {
 		</table>
 		</div>
 		</div>
-		</article>
+		</section>
 
+		<section>
 		<h1 id="tempos">Conjugações: Tempos</h1>
-		<article>
 		<div>
 		<h2>Presente</h2>
 		<p>Apenas verbos imperfectivos possuem esta forma.</p>
@@ -1969,10 +1973,10 @@ p {
 		</table>
 		</div>
 		</div>
-		</article>
+		</section>
 
+		<section>
 		<h1 id="modos">Conjugações: Modos</h1>
-		<article>
 		<div>
 		<h2>Imperativo</h2>
 		<h3>Uso</h3>
@@ -2222,10 +2226,10 @@ p {
 		<h3>Voz Passiva: Agente Não-Específico</h3>
 		<p>Para frases passivas onde o agente da ação é irrelevante, usa-se o final -o.</p>
 		</div>
-		</article>
+		</section>
 
+		<section>
 		<h1 id="cardinais">Numerais: Cardinais</h1>
-		<article>
 		<div>
 		<h2>Expressões de Quantidade</h2>
 		<p>Uma palavra quantitativa, mais uma expressão "de quê" (substantivo com adjetivos opcionais), é chamada de expressão de quantidade.</p>
@@ -2548,10 +2552,10 @@ p {
 		</table>
 		</div>
 		</div>
-		</article>
+		</section>
 
+		<section>
 		<h1 id="numeros-formas">Numerais: Outras Formas</h1>
-		<article>
 		<div>
 		<h2>Indefinidos</h2>
 		<p>São palavras quantitativas.</p>
@@ -2823,10 +2827,10 @@ p {
 		</table>
 		</div>
 		</div>
-		</article>
+		</section>
 
+		<section>
 		<h1 id="formas">Formas Alternativas</h1>
-		<article>
 		<div>
 		<h2>Adjetivos</h2>
 		<p>Possuem algumas formas:</p>
@@ -2894,10 +2898,10 @@ p {
 		</table>
 		</div>
 		</div>
-		</article>
+		</section>
 
+		<section>
 		<h1 id="expressoes">Expressões Diversas</h1>
-		<article>
 		<div>
 		<h2>Comparativas</h2>
 		<p>Válidas tanto para adjetivos comparativos como para advérbios comparativos.</p>
@@ -3198,10 +3202,10 @@ p {
 		</table>
 		</div>
 		</div>
-		</article>
+		</section>
 
+		<section>
 		<h1 id="glossario">Glossário: Termos Comuns</h1>
-		<article>
 		<div>
 		<h2>Conjunções</h2>
 		<div class="overflow-table">
@@ -3993,39 +3997,32 @@ p {
 		</table>
 		</div>
 		</div>
-		</article>
+		</section>
 	</main>
 	</article>
 	<script>
-		function makeLi(href, title) {
-			var li = document.createElement("li");
-			var liAnchor = document.createElement("a");
-			var liTitle = document.createTextNode(title);
-			liAnchor.setAttribute("href", href);
-			liAnchor.appendChild(liTitle);
-			li.appendChild(liAnchor);
-			return li;
-		}
-		
-		var articles = document.getElementsByTagName("article");
-		var headers = document.getElementsByTagName("h1");
-		var sumario = document.getElementById("sumario");
-		for(var i = 0; i < articles.length; i++) {
-			var subsections = articles[i].getElementsByTagName("h2");
+		let html = '';
 
-			var ulSubsections = document.createElement("ul");
+		var sections = document.querySelectorAll("section");
+		sections.forEach(section => {
+			let title = section.querySelector('h1');
+			html += `<li><a href="${title.id}">${title.innerHTML}</a></li>`;
 
-			var liHref = "#" + headers[i+2].id;
-			sumario.appendChild(makeLi(liHref, headers[i+2].innerHTML));
-			
-			ulSubsections.appendChild(makeLi(liHref, subsections[0].innerHTML));
+			html += '<ul>';
 
-			for (var j = 1; j < subsections.length; j++) {
-				ulSubsections.appendChild(makeLi("#" + subsections[j].id, subsections[j].innerHTML));
-			}
+			let subsections = section.querySelectorAll("div h2");
+			subsections.forEach(subsection => {
+				html += `<li><a href="${subsection.id}">${subsection.innerHTML}</a></li>`;
+			});
 
-			sumario.appendChild(ulSubsections);
-		}
+			html += '</ul>';
+		});
+
+		console.log(html);
+
+		let sumary = document.querySelector("#sumario");
+
+		sumary.innerHTML = html;
 	</script>
 	</body>
 </html>
