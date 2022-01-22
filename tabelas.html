@@ -4006,13 +4006,13 @@ p {
 		var sections = document.querySelectorAll("section");
 		sections.forEach(section => {
 			let title = section.querySelector('h1');
-			html += `<li><a href="${title.id}">${title.innerHTML}</a></li>`;
+			html += `<li><a href="#${title.id}">${title.innerHTML}</a></li>`;
 
 			html += '<ul>';
 
 			let subsections = section.querySelectorAll("div h2");
 			subsections.forEach(subsection => {
-				html += `<li><a href="${subsection.id}">${subsection.innerHTML}</a></li>`;
+				html += `<li><a href="#${subsection.id}">${subsection.innerHTML}</a></li>`;
 			});
 
 			html += '</ul>';
